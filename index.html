@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Link tou our styles.css-->
+    <link rel="stylesheet" href="./assets/styles.css" type="text/css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Playball|Vibes|Merienda&display=swap"
+        rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Breault Portfolio</title>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+    <div class="pageContainer">
+        <header>
+            <!--Navbar-->
+            <nav class="nav-wrapper grey darken-2" id="mainNavbar">
+                <div class="container">
+                    <a href="#" class="brand-logo cyan-text">Connor Breault</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="navbar-links" class="right hide-on-med-and-down">
+                        <li><a href="/projects" class="profileLink lnk navlink">My Projects</a></li>
+                        <li><a href="/contact" class="contactLink lnk navlink">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--Navbar Phone Menu-->
+            <div>
+                <ul class="sidenav" id="mobile-links">
+                    <li><a href="/projects" class="profileLink">My Projects</a></li>
+                    <li><a href="/contact" class="contactLink">Contact Me</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div id="content-container" class="mainContainer">
+                <h2 class="h1 cyan-text infoHeader">About Me</h2>
+                <hr width="80%">
+                <img class="pic" id="profilePic" src="./assets/images/Profile-Pic.jpg" alt="Photo">
+                <div class="aboutMe">
+                    <p class="aboutMeP">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam veniam asperiores, illo
+                        exercitationem mollitia pariatur, dolor itaque perferendis esse atque quas quam quae culpa
+                        inventore beatae tempora quia quidem molestias.
+                    </p>
+                    <p class="aboutMeP">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero veniam cumque ipsam soluta optio.
+                        Explicabo facere alias nostrum suscipit sunt consectetur libero possimus, culpa nam
+                        necessitatibus, cupiditate exercitationem blanditiis ut.
+                    </p>
+                    <p class="aboutMeP">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis quia architecto
+                        commodi nisi libero, velit veniam voluptas temporibus deleniti consectetur odit necessitatibus
+                        corrupti beatae sint nobis consequuntur tenetur facilis.
+                    </p>
+                    <p class="aboutMeP">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem quod beatae, eligendi
+                        rerum recusandae molestias. Animi rem labore, exercitationem asperiores voluptates, aut suscipit
+                        vitae non est at blanditiis eaque ullam.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+
+        <!--My Links-->
+        <div class="myLinkDiv">
+            <h5 id="findMe">Find me at the links below!</h5>
+            <div class="row">
+                <div class="col s6">
+                    <a class="myLinks cyan-text" href="https://github.com/connorbreault" target="_blank">Github</a>
+                </div>
+                <div class="col s6">
+                    <a class="myLinks cyan-text" href="https://www.linkedin.com/in/connor-breault-698634170/"
+                        target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <footer id="footer" class="page-footer transparent"
+            style="position:absolute;bottom:0;width:100%; height:2.5rem">
+            <div class="footer grey darken-3">
+                <div class="container center footText cyan-text" id="copyright">
+                    © 2019 Copyright
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="/js/index.js"></script> -->
+</body>
+
+</html>

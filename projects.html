@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Link tou our styles.css-->
+    <link rel="stylesheet" href="./assets/styles.css" type="text/css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Playball|Vibes|Merienda&display=swap"
+        rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Breault Portfolio</title>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+    <div class="pageContainer">
+        <header>
+            <!--Navbar-->
+            <nav class="nav-wrapper grey darken-2" id="mainNavbar">
+                <div class="container">
+                    <a href="#" class="brand-logo cyan-text">Connor Breault</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul id="navbar-links" class="right hide-on-med-and-down">
+                        <li><a href="/" class="aboutmeLink lnk navlink">About Me</a></li>
+                        <li><a href="/contact" class="contactLink lnk navlink">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!--Navbar Phone Menu-->
+            <div>
+                <ul class="sidenav" id="mobile-links">
+                    <li><a href="/" class="aboutmeLink">About Me</a></li>
+                    <li><a href="/contact" class="contactLink">Contact Me</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div id="content-container" class="mainContainer">
+                <h2 class="h1 cyan-text infoHeader">My Projects</h2>
+                <hr width="80%">
+                <div class="projectDiv">
+                    {{#each projects}}
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src={{image}} class="activator cardImg">
+
+                        </div>
+                        <div class="card-content activator">
+                            <span class="card-title activator grey-text text-darken-4">{{name}}<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title cyan-text text-darken-2">{{name}}<i
+                                    class="material-icons right">close</i></span>
+                            <div class="cardInfo text-darken-1">
+                                <p>{{info}}</p>
+                            </div>
+                        </div>
+                        <div class="card-action gray">
+                            <a href={{githubRepo}} class="cardLinks cyan-text" target=" _blank">Github Repo</a>
+                            <a href={{liveSite}} class="cardLinks cyan-text" target=" _blank">Live Site</a>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </main>
+
+
+        <!--My Links-->
+        <div class="myLinkDiv">
+            <h5 id="findMe">Find me at the links below!</h5>
+            <div class="row">
+                <div class="col s6">
+                    <a class="myLinks cyan-text" href="https://github.com/connorbreault" target="_blank">Github</a>
+                </div>
+                <div class="col s6">
+                    <a class="myLinks cyan-text" href="https://www.linkedin.com/in/connor-breault-698634170/"
+                        target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <footer id="footer" class="page-footer transparent"
+            style="position:absolute;bottom:0;width:100%; height:2.5rem">
+            <div class="footer grey darken-3">
+                <div class="container center footText cyan-text" id="copyright">
+                    © 2019 Copyright
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="/js/index.js"></script> -->
+</body>
+
+</html>

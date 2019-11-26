@@ -1,0 +1,278 @@
+/* ===== BACKGROUND AND FOOTER SETTINGS ===== */
+body {
+    background: url(../assets/images/prism.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px
+}
+main {
+    flex:1 0 auto
+}
+.pageContainer{
+    position: relative;
+    height: 100%;
+}
+.material-icons{
+    display: inline-flex;
+    vertical-align: top;
+}
+
+
+/* ============ HIDDEN ============= */
+.hidden{
+    display: none
+}
+
+
+/* ============ NAVBAR ============= */
+.brand-logo{
+    font-family: 'Playball', cursive;
+    font-size: 25px !important;
+}
+.navlink{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+/* ======= MAIN CONTAINERS ========= */
+.mainContainer{
+    width: 95%;
+    background: white;
+    margin: 30px auto;
+    border: 2px outset grey;
+    border-radius: 25px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.infoHeader{
+    margin: 20px 0px 0px 10px;
+    padding: 20px 0px 5px 10px;
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+}
+
+
+/* =========== ABOUT ME PAGE ============= */
+#profilePic{
+    width: 90%;
+    margin: 5%;
+    border: 1px solid grey;
+}
+.aboutMe {
+    text-align: center;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+.aboutMeP{
+    margin: 5px auto 15px auto
+}
+
+
+/* ========== CONTACT ME PAGE =========== */
+#emailRow{
+    margin: auto;
+    width: 90%;
+}
+#messageRow{
+    margin: auto;
+    width: 95%
+}
+.myContact{
+    text-align: center;
+    margin: 10px;
+    border: 2px outset black;
+    border-radius: 25px;
+    background: url(../assets/images/prism.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ========== PROJECTS PAGE ==========*/
+.card{
+    width: 80%;
+    margin: 15px auto !important;
+    text-align: center;
+    font-family: 'Playball', sans-serif;
+}
+.cardImg{
+    height: 150px
+}
+.card-content{
+    padding: 10px !important;
+    background: darkgray !important;
+}
+.card-action{
+    padding: 10px !important;
+    background: gray !important;
+}
+.card-reveal{
+    font-family: 'Alegreya Sans', sans-serif;
+    background: url(../assets/images/prism.png)
+}
+.cardInfo{
+    background: white;
+    border: 3px outset #3e97a8;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 5px;
+}
+.cardLinks:hover{
+    color: gold !important
+}
+
+
+/* =========== MY LINKS ============= */
+.myLinkDiv{
+    background: gray;
+    text-align: center;
+    border: 2px outset #3e97a8;
+    border-radius: 25px;
+    margin: 0px auto 45px auto;
+    width: 80%;
+    font-family: 'Merienda', cursive;
+}
+.myLinks{
+    font-size: 25px;
+    text-decoration: underline
+}
+
+
+/* ============ FOOTER ============== */
+.footText{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+/* ============ MEDIA QUERIES =============== */
+
+/* ========== larger than 800px ============= */
+@media only screen and (min-width: 800px) {
+    .mainContainer{
+    width: 80%
+    }
+    .infoHeader{
+    font-size: 50px
+    }
+    #profilePic{
+    width: 25%;
+    margin: 5%;
+    float: left;
+    }
+    .aboutMe{
+    font-size: 35px;
+    padding: 30px;
+    text-align: center
+    }
+    #nameNumRow{
+    width: 90%;
+    margin: auto;
+    }
+    .infoHeader{
+    text-align: center
+    }
+    #emailRow{
+    width: 60%
+    }
+    .myContact{
+    width: 50%;
+    margin: 15px auto
+    }
+    .card{
+    width: 30%;
+    }
+    .projectDiv{
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    }
+    .myLinkDiv{
+            width: 30%
+    }
+  }
+
+  /* ======== IPAD ========= */
+@media (max-width: 1025px) and (min-width: 750px) {
+    .aboutMe{
+            font-size: 50px
+    }
+    #findMe{
+            font-size: 30px
+    }
+    .cardImg{
+            height: auto
+    }
+    .card-title{
+            font-size: 40px !important
+    }
+    .cardInfo{
+            font-size: 40px
+    }
+    .cardLinks{
+            font-size: 25px
+    }
+  }
+  /* IPAD PRO */
+@media (max-width: 1025px) and (min-width: 1023px) {
+    .projectDiv{
+            display: block
+    }
+    .infoHeader{
+            font-size: 65px
+    }
+    .brand-logo{
+            font-size: 40px !important;
+    }
+    .navlink{
+            font-size: 25px
+    }
+    .cardImg{
+            height: 300px !important
+    }
+    .card{
+            width: 90%
+    }
+    #contactRow{
+            font-size: 55px
+    }
+    .contactLabel{
+            font-size: 30px !important
+    }
+    .validate{
+            font-size: 35px !important
+    }
+    #submitMessageButton{
+            font-size: 25px
+    }
+    .myContact{
+            line-height: 50px
+    }
+    #orContact{
+            font-size: 45px
+    }
+    #myPhone{
+            font-size: 45px
+    }
+    #myEmail{
+            font-size: 35px
+    }
+    .prefix{
+            font-size: 40px !important
+    }
+    .myLinkDiv{
+            width: 40%
+    }
+    #findMe{
+            font-size: 45px
+    }
+    .myLinks{
+            font-size: 35px 
+    }
+  }
