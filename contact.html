@@ -22,6 +22,13 @@
 
     <script src="https://code.jquery.com/jquery.js"></script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_deAIEYtIkIShexUgNNM3h");
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -121,10 +128,26 @@
                     </div>
 
                 </div>
-                <div id="thanksMessage" class="thanksMessage hidden">
-                    <h1 class="center thanks">Thanks!</h1>
-                    <h3 class="center">I'll get back to you soon...</h3>
+
+                <div class="loading">
+                    <div class="center-align">
+                        <img src="./assets/images/loading.gif" alt="" class="loadingGif hidden">
+                    </div>
                 </div>
+
+                <!-- Thanks message -->
+                <div id="thanksMessage" class="hidden">
+                    <h1 class="center">Thanks!</h1>
+                    <h2 class="center">Your message was sent.</h2>
+                    <h3 class="center">I'll get back to you soon!</h3>
+                </div>
+                <!-- Error message -->
+                <div id="errorMessage" class="hidden">
+                    <h1 class="center">Error!</h1>
+                    <h2 class="center">Your message did not go through.</h2>
+                    <h3 class="center">Please refresh your page and try again</h3>
+                </div>
+
             </div>
 
             <!--My Links-->

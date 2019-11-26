@@ -4,57 +4,64 @@ var projects = [
         info: "Which Bobs Burgers character are you?  Take this short quiz to find out!  Full stack app deployed through Heroku.",
         githubRepo: "https://github.com/connorbreault/Friend-Finder",
         liveSite: "https://friend-finder-breault.herokuapp.com/",
-        image: "/Friend-finder.png"
+        image: "./assets/images/Friend-finder.png"
     },
     {
         name: "Burger app",
         info: "Full stack app using mySQL and deployed through Heroku.",
         githubRepo: "https://github.com/connorbreault/burger",
         liveSite: "https://nameless-mesa-44263.herokuapp.com/",
-        image: "../images/Burger.png"
+        image: "./assets/images/Burger.png"
     },
     {
         name: "Trivia",
         info: "Fallout based trivia game!  Currently deployed through Github.",
         githubRepo: "https://github.com/connorbreault/TriviaGame",
         liveSite: "https://connorbreault.github.io/TriviaGame/",
-        image: "../images/Trivia.png"
+        image: "./assets/images/Trivia.png"
     },
     {
         name: "GifTastic",
         info: "Gif search site!  Currently deployed through Github.",
         githubRepo: "https://github.com/connorbreault/GifTastic",
         liveSite: "https://connorbreault.github.io/GifTastic/",
-        image: "../images/Gif.png"
+        image: "./assets/images/Gif.png"
     },
     {
         name: "Crystal Collector",
         info: "Math based memory game!  Currently deployed through Github.",
         githubRepo: "https://github.com/connorbreault/Crystal-Collector",
         liveSite: "https://connorbreault.github.io/Crystal-Collector/",
-        image: "../images/Crystal.png"
+        image: "./assets/images/Crystal.png"
     },
     {
         name: "Train Schedule",
         info: "Faux train scheduling app!  Currently deployed through Github.",
         githubRepo: "https://github.com/connorbreault/Train-Schedule",
         liveSite: "https://connorbreault.github.io/Train-Schedule/",
-        image: "../images/Train.png"
+        image: "./assets/images/Train.png"
     },
     {
         name: "Excursion",
         info: "Faux Travel budget app!  Group project 1, I created the entire visual layout.  Currently deployed through Github.",
         githubRepo: "https://github.com/connorbreault/Excursion",
         liveSite: "https://connorbreault.github.io/Excursion/",
-        image: "../images/Excursion.png"
+        image: "./assets/images/Excursion.png"
     },
     {
         name: "Make your own adventure",
-        info: "Choose your own path game, group project 2.  I set up the back end and created the entire front end.  Deployed through Heroku",
+        info: "Choose your own path game, group project 2.  I set up the back end and created the entire front end.  Deployed through Heroku.",
         githubRepo: "https://github.com/connorbreault/bandersnatch",
         liveSite: "https://fast-hollows-27557.herokuapp.com/home",
-        image: "../images/Bandersnatch.png"
-    }
+        image: "./assets/images/Bandersnatch.png"
+    },
+    {
+        name: "WeHarmony",
+        info: "Find local musicians, group project 3.  I set up the database, all API calls, and created the entire front end.  Deployed through Heroku.",
+        githubRepo: "https://github.com/connorbreault/WeHarmonyPrototype",
+        liveSite: "https://weharmonyprototype.herokuapp.com/",
+        image: "./assets/images/WeHarmony.png"
+    },
 ]
 
 // === PHONE MENU FUNCTION === //
@@ -104,6 +111,22 @@ $("#submitMessageButton").on("click", function () {
         $(".messageMessage").val("")
         $(".contactDiv").addClass("hidden")
         $(".myContact").addClass("hidden")
-        $(".thanksMessage").removeClass("hidden")
+        $(".loadingGif").removeClass("hidden")
+        let templateParams = {
+            name: messageName,
+            number: messageNumber,
+            email: messageEmail,
+            message: messageMessage,
+        }
+        emailjs.send('default_service', 'template_5MmNhXRS', templateParams)
+            .then(function (response) {
+                console.log('Sucessful message send!');
+                $(".loadingGif").addClass("hidden")
+                $("#thanksMessage").removeClass("hidden")
+            }, function (error) {
+                console.log('FAILED...', error);
+                $(".loadingGif").addClass("hidden")
+                $("#errorMessage").removeClass("hidden")
+            });
     }
 })

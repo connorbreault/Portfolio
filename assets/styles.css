@@ -44,6 +44,7 @@ main {
     background: white;
     margin: 30px auto;
     border: 2px outset grey;
+    padding: 5px;
     border-radius: 25px;
     font-family: 'Alegreya Sans', sans-serif;
 }
@@ -93,7 +94,10 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+.loadingGif{
+    width: 70%;
+    border-radius: 50%;
+}
 
 /* ========== PROJECTS PAGE ==========*/
 .card{
