@@ -55,29 +55,6 @@
                 <h2 class="h1 cyan-text infoHeader">My Projects</h2>
                 <hr width="80%">
                 <div class="projectDiv">
-                    {{#each projects}}
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img src={{image}} class="activator cardImg">
-
-                        </div>
-                        <div class="card-content activator">
-                            <span class="card-title activator grey-text text-darken-4">{{name}}<i
-                                    class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title cyan-text text-darken-2">{{name}}<i
-                                    class="material-icons right">close</i></span>
-                            <div class="cardInfo text-darken-1">
-                                <p>{{info}}</p>
-                            </div>
-                        </div>
-                        <div class="card-action gray">
-                            <a href={{githubRepo}} class="cardLinks cyan-text" target=" _blank">Github Repo</a>
-                            <a href={{liveSite}} class="cardLinks cyan-text" target=" _blank">Live Site</a>
-                        </div>
-                    </div>
-                    {{/each}}
                 </div>
             </div>
         </main>
@@ -109,7 +86,7 @@
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <script src="/js/index.js"></script> -->
+    <script src="./assets/js/logic.js"></script>
 </body>
 
 </html>
