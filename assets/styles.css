@@ -5,11 +5,9 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    margin: 0px;
-    padding: 0px
 }
 main {
     flex:1 0 auto
@@ -66,10 +64,12 @@ main {
 .aboutMe {
     text-align: center;
     font-size: 25px;
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
 .aboutMeP{
-    margin: 5px auto 15px auto
+    margin: 5px auto 15px auto;
+    font-size: 20px;
+    font-family: 'Cinzel', serif
 }
 
 
@@ -146,6 +146,9 @@ main {
 
 
 /* ============ FOOTER ============== */
+#footer{
+    position:fixed;bottom:0;left:0;width:100%;
+}
 .footText{
     font-family: 'Alegreya Sans', sans-serif;
 }
@@ -161,15 +164,13 @@ main {
     .infoHeader{
     font-size: 50px
     }
-    #profilePic{
-    width: 25%;
-    margin: 5%;
-    float: left;
-    }
     .aboutMe{
     font-size: 35px;
-    padding: 30px;
+    padding: 25px;
     text-align: center
+    }
+    .aboutMeP{
+    font-size: 25px;
     }
     #nameNumRow{
     width: 90%;
@@ -194,7 +195,7 @@ main {
     flex-wrap: wrap;
     }
     .myLinkDiv{
-            width: 30%
+    width: 30%
     }
   }
 
