@@ -94,6 +94,23 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.pref{
+    width: 85%;
+    border: 2px outset black;
+    border-radius: 25px;
+    background: url(../assets/images/prism.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 15px
+}
+#preferredMethod{
+    font-family: 'Merienda', cursive;
+}
+.prefSpans{
+    font-size: 20px
+}
 .loadingGif{
     width: 70%;
     border-radius: 50%;
@@ -200,6 +217,9 @@ main {
     }
     .myLinkDiv{
     width: 30%
+    }
+    .pref{
+        width: 40%
     }
   }
 

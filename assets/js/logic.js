@@ -102,6 +102,7 @@ $("#submitMessageButton").on("click", function () {
     var messageNumber = $("#icon_telephone").val().trim()
     var messageEmail = $("#icon_email").val().trim()
     var messageMessage = $(".messageMessage").val().trim()
+    var prefMethod = $("input[name=group1]:checked").next().text();
     if (messageName === "" || messageNumber === "" || messageEmail === "" || messageMessage === "") {
         alert("Please fill out all contact information!")
     } else {
@@ -116,6 +117,7 @@ $("#submitMessageButton").on("click", function () {
             name: messageName,
             number: messageNumber,
             email: messageEmail,
+            method: prefMethod,
             message: messageMessage,
         }
         emailjs.send('default_service', 'template_5MmNhXRS', templateParams)
