@@ -31,7 +31,8 @@
             <nav class="nav-wrapper grey darken-2" id="mainNavbar">
                 <div class="container">
                     <a href="#" class="brand-logo cyan-text">Connor Breault</a>
-                    <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <a href="#" class="sidenav-trigger" data-target="slide-out">
+                        <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
                         <i class="material-icons">menu</i>
                     </a>
                     <ul id="navbar-links" class="right hide-on-med-and-down">
@@ -43,9 +44,22 @@
 
             <!--Navbar Phone Menu-->
             <div>
-                <ul class="sidenav" id="mobile-links">
-                    <li><a href="./projects.html" class="profileLink">My Projects</a></li>
-                    <li><a href="./contact.html" class="contactLink">Contact Me</a></li>
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img class="sidenavImg" src="./assets/images/nav.jpg">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sidenavItem"><a class="waves-effect sidenavLink cyan-text" href="./projects.html">
+                            <i class="material-icons sidenavIco cyan-text">date_range</i>
+                            My Projects</a>
+                    </li>
+                    <li class="sidenavItem"><a class="waves-effect sidenavLink cyan-text" href="./contact.html">
+                            <i class="material-icons sidenavIco cyan-text">mail_outline</i>
+                            Contact Me</a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -67,8 +81,7 @@
                             </p>
                             <p class="aboutMeP">
                                 I accel in JavaScript, React, and Python.
-                                Just as comfortable creating an API as I am creating a stunning UX.
-                                If I'm not coding, I'm either making music, skating or snowboarding.
+                                If I'm not coding, I'm probably making music.
                             </p>
                         </div>
                     </div>

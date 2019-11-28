@@ -35,13 +35,6 @@ var projects = [
         image: "./assets/images/Crystal.png"
     },
     {
-        name: "Train Schedule",
-        info: "Faux train scheduling app!  Currently deployed through Github.",
-        githubRepo: "https://github.com/connorbreault/Train-Schedule",
-        liveSite: "https://connorbreault.github.io/Train-Schedule/",
-        image: "./assets/images/Train.png"
-    },
-    {
         name: "Excursion",
         info: "Faux Travel budget app!  Group project 1, I created the entire visual layout.  Currently deployed through Github.",
         githubRepo: "https://github.com/connorbreault/Excursion",
@@ -70,30 +63,8 @@ $(".modal").modal()
 
 // === RENDER PROJECTS === //
 for (let i = 0; i < projects.length; i++) {
-    let newCard = (`
-    <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-        <img src=${projects[i].image} class="activator cardImg">
-    </div>
-    <div class="card-content activator">
-        <span class="card-title activator grey-text text-darken-4">${projects[i].name}<i
-            class="material-icons right">more_vert</i></span>
-    </div>
-            <div class="card-reveal">
-                <span class="card-title cyan-text text-darken-2">${projects[i].name}<i
-                    class="material-icons right">close</i></span>
-                <div class="cardInfo text-darken-1">
-                    <p>${projects[i].info}</p>
-                </div>
-            </div>
-            <div class="card-action gray">
-                <a href=${projects[i].githubRepo} class="cardLinks cyan-text" target=" _blank">Github Repo</a>
-                <a href=${projects[i].liveSite} class="cardLinks cyan-text" target=" _blank">Live Site</a>
-            </div>
-        </div>
-    `)
+    let newCard = (` <div class="card"><div class="card-image waves-effect waves-block waves-light"><img src=${projects[i].image} class="activator cardImg"></div><div class="card-content activator"><span class="card-title activator grey-text text-darken-4">${projects[i].name}<i class="material-icons right">more_vert</i></span></div><div class="card-reveal"><span class="card-title cyan-text text-darken-2">${projects[i].name}<i class="material-icons right">close</i></span><div class="cardInfo text-darken-1"><p>${projects[i].info}</p></div></div><div class="card-action gray"><a href=${projects[i].githubRepo} class="cardLinks cyan-text" target=" _blank">Github Repo</a><a href=${projects[i].liveSite} class="cardLinks cyan-text" target=" _blank">Live Site</a></div></div> `)
     $(".projectDiv").append(newCard)
-
 }
 
 // === CONTACT ME FORM === //
@@ -102,7 +73,7 @@ $("#submitMessageButton").on("click", function () {
     var messageNumber = $("#icon_telephone").val().trim()
     var messageEmail = $("#icon_email").val().trim()
     var messageMessage = $(".messageMessage").val().trim()
-    var prefMethod = $("input[name=group1]:checked").next().text();
+    var prefMethod = $("input[name=group1]:checked").next().text()
     if (messageName === "" || messageNumber === "" || messageEmail === "" || messageMessage === "") {
         alert("Please fill out all contact information!")
     } else {
@@ -122,11 +93,11 @@ $("#submitMessageButton").on("click", function () {
         }
         emailjs.send('default_service', 'template_5MmNhXRS', templateParams)
             .then(function (response) {
-                console.log('Sucessful message send!');
+                console.log('Sucessful message send!')
                 $(".loadingGif").addClass("hidden")
                 $("#thanksMessage").removeClass("hidden")
             }, function (error) {
-                console.log('FAILED...', error);
+                console.log('FAILED...', error)
                 $(".loadingGif").addClass("hidden")
                 $("#errorMessage").removeClass("hidden")
             });

@@ -39,6 +39,19 @@ main {
 .navlink{
     font-family: 'Alegreya Sans', sans-serif;
 }
+#slide-out{
+    background: url(./images/prism.png)
+}
+.user-view{
+    height: 150px
+}
+.sidenavLink{
+    font-size: 20px !important;
+    text-align: center;
+}
+.sidenavItem{
+    margin: 20px auto
+}
 
 
 /* ======= MAIN CONTAINERS ========= */
@@ -67,13 +80,12 @@ main {
 }
 .aboutMe {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
     padding: 0px 10px;
 }
 .aboutMeP{
-    margin: 5px auto 15px auto;
-    font-size: 20px;
-    font-family: 'Cinzel', serif
+    margin: 15px auto;
 }
 
 
@@ -207,12 +219,9 @@ main {
     font-size: 50px
     }
     .aboutMe{
-    font-size: 35px;
-    padding: 25px;
-    text-align: center
-    }
-    .aboutMeP{
+    padding: 40px;
     font-size: 25px;
+    text-align: center
     }
     #nameNumRow{
     width: 90%;
