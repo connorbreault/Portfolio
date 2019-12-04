@@ -57,9 +57,10 @@ var projects = [
     },
 ]
 
-// === PHONE MENU FUNCTION === //
-$(".sidenav").sidenav()
-$(".modal").modal()
+$(document).ready(function () {
+    M.AutoInit();
+    emailjs.init(config.emailJS_key);
+});
 
 // === RENDER PROJECTS === //
 for (let i = 0; i < projects.length; i++) {
