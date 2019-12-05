@@ -1,14 +1,14 @@
 var projects = [
     {
         name: "Chracacter test",
-        info: "Which Bobs Burgers character are you?  Take this short quiz to find out!  Full stack app deployed through Heroku.",
+        info: "Which Bobs Burgers character are you?  Take this short quiz to find out!  Full stack app deployed through Heroku. Sole Developer.",
         githubRepo: "https://github.com/connorbreault/Friend-Finder",
         liveSite: "https://friend-finder-breault.herokuapp.com/",
         image: "./assets/images/Friend-finder.png"
     },
     {
         name: "Burger app",
-        info: "Full stack app using mySQL and deployed through Heroku.",
+        info: "Full stack app using mySQL and deployed through Heroku. Sole Developer.",
         githubRepo: "https://github.com/connorbreault/burger",
         liveSite: "https://nameless-mesa-44263.herokuapp.com/",
         image: "./assets/images/Burger.png"
@@ -36,21 +36,21 @@ var projects = [
     },
     {
         name: "Excursion",
-        info: "Faux Travel budget app!  Group project 1, I created the entire visual layout.  Currently deployed through Github.",
+        info: "Faux Travel budget app,  group project 1.  Lead developer of a group of 4. I created the entire visual layout.  Currently deployed through Github.",
         githubRepo: "https://github.com/connorbreault/Excursion",
         liveSite: "https://connorbreault.github.io/Excursion/",
         image: "./assets/images/Excursion.png"
     },
     {
-        name: "Make your own adventure",
-        info: "Choose your own path game, group project 2.  I set up the back end and created the entire front end.  Deployed through Heroku.",
+        name: "BanderRip",
+        info: "Choose your own path game, group project 2. Lead Developer of a group of 5. I set up the back end and created the entire front end design and logic.  Deployed through Heroku.",
         githubRepo: "https://github.com/connorbreault/bandersnatch",
         liveSite: "https://fast-hollows-27557.herokuapp.com/home",
         image: "./assets/images/Bandersnatch.png"
     },
     {
         name: "WeHarmony",
-        info: "Find local musicians, group project 3.  I set up the database, all API calls, and created the entire front end.  Deployed through Heroku.",
+        info: "Find local musicians, group project 3.  Lead Developer of a group of 2.  I set up the database, all API calls, and created the entire front end.  Deployed through Heroku.",
         githubRepo: "https://github.com/connorbreault/WeHarmonyPrototype",
         liveSite: "https://weharmonyprototype.herokuapp.com/",
         image: "./assets/images/WeHarmony.png"
