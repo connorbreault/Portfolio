@@ -60,6 +60,9 @@ var projects = [
 $(document).ready(function () {
     M.AutoInit();
 });
+function js_Load() {
+    document.body.style.visibility = 'visible'
+}
 
 // === RENDER PROJECTS === //
 for (let i = 0; i < projects.length; i++) {

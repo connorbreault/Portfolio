@@ -4,7 +4,7 @@
 
 ![Demoimg](./assets/images/demo.png)
 
-My current portfolio, live at [connorbreault.dev](https://www.connorbreault.dev). This simplified web app was built utilizing the following technologies:
+My current portfolio, live at [connorbreault.dev](https://connorbreault.dev/). This simplified web app was built utilizing the following technologies:
 
   - Materialize
   - Javascript
