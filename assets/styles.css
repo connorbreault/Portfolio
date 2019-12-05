@@ -161,8 +161,11 @@ main {
     background: darkgray !important;
 }
 .card-action{
-    padding: 10px !important;
+    padding: 15px !important;
     background: gray !important;
+}
+.cardLinks{
+    margin: auto 15px;
 }
 .card-reveal{
     font-family: 'Alegreya Sans', sans-serif;
@@ -209,9 +212,17 @@ main {
 
 
 /* ============ MEDIA QUERIES =============== */
+@media only screen and (max-width: 365px) {
+    .card{
+        width: 95%
+    }
+    .cardLinks{
+        margin: auto 10px
+    }
+}
 
 /* ========== larger than 800px ============= */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 825px) {
     .mainContainer{
     width: 80%
     }
@@ -329,5 +340,8 @@ main {
     }
     .myLinks{
             font-size: 35px 
+    }
+    .pref{
+        height: 200px
     }
   }

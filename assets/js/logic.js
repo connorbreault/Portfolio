@@ -36,7 +36,7 @@ var projects = [
     },
     {
         name: "Excursion",
-        info: "Faux Travel budget app,  group project 1.  Lead developer of a group of 4. I created the entire visual layout.  Currently deployed through Github.",
+        info: "Faux Travel budget app,  group project 1.  Co-lead developer of a group of 4. I created the entire visual layout.  Currently deployed through Github.",
         githubRepo: "https://github.com/connorbreault/Excursion",
         liveSite: "https://connorbreault.github.io/Excursion/",
         image: "./assets/images/Excursion.png"
@@ -59,7 +59,6 @@ var projects = [
 
 $(document).ready(function () {
     M.AutoInit();
-    emailjs.init(config.emailJS_key);
 });
 
 // === RENDER PROJECTS === //
