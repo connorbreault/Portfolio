@@ -52,6 +52,9 @@ main {
 .sidenavItem{
     margin: 20px auto
 }
+.sidenavImg{
+    width: 150%
+}
 
 
 /* ======= MAIN CONTAINERS ========= */
