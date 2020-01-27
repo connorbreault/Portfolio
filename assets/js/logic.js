@@ -1,5 +1,12 @@
 var projects = [
     {
+        name: "Flub",
+        info: "Simplistic site built for clients in the band Flub!  Full stack app utilizing Firebase and emailJS. Sole Developer.",
+        githubRepo: "https://github.com/connorbreault/Flub",
+        liveSite: "https://flubmusic.com/",
+        image: "./assets/images/Flub.png"
+    },
+    {
         name: "Chracacter test",
         info: "Which Bobs Burgers character are you?  Take this short quiz to find out!  Full stack app deployed through Heroku. Sole Developer.",
         githubRepo: "https://github.com/connorbreault/Friend-Finder",
