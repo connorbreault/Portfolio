@@ -7,6 +7,13 @@ var projects = [
         image: "./assets/images/Flub.png"
     },
     {
+        name: "Grafik Roboto",
+        info: "Custom storefront for vinyl decal company Grafik Roboto!  Full stack app utilizing MySQL and PayPal. Sole Developer.  STILL IN PROGRESS",
+        githubRepo: "https://github.com/connorbreault/Grafik_roboto",
+        liveSite: "https://enigmatic-eyrie-71266.herokuapp.com/",
+        image: "./assets/images/Grafik_Roboto.png"
+    },
+    {
         name: "Chracacter test",
         info: "Which Bobs Burgers character are you?  Take this short quiz to find out!  Full stack app deployed through Heroku. Sole Developer.",
         githubRepo: "https://github.com/connorbreault/Friend-Finder",
