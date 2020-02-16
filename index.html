@@ -25,89 +25,96 @@
 
 </head>
 
-<body style="visibility:hidden;" onload="js_Load()">
+<body>
     <div class="pageContainer">
-        <header>
-            <!--Navbar-->
-            <nav class="nav-wrapper grey darken-2" id="mainNavbar">
-                <div class="container">
-                    <a href="#" class="brand-logo cyan-text">Connor Breault</a>
-                    <a href="#" class="sidenav-trigger" data-target="slide-out">
-                        <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul id="navbar-links" class="right hide-on-med-and-down">
-                        <li><a href="./projects.html" class="profileLink lnk navlink">My Projects</a></li>
-                        <li><a href="./contact.html" class="contactLink lnk navlink">Contact Me</a></li>
+        <div class="headerFade">
+            <header>
+                <!--Navbar-->
+                <nav class="nav-wrapper grey darken-2" id="mainNavbar">
+                    <div class="container">
+                        <a href="#" class="brand-logo cyan-text">Connor Breault</a>
+                        <a href="#" class="sidenav-trigger" data-target="slide-out">
+                            <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul id="navbar-links" class="right hide-on-med-and-down">
+                            <li><a href="./projects.html" class="profileLink lnk navlink">My Projects</a></li>
+                            <li><a href="./contact.html" class="contactLink lnk navlink">Contact Me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!--Navbar Phone Menu-->
+                <div>
+                    <ul id="slide-out" class="sidenav">
+                        <li>
+                            <div class="user-view">
+                                <div class="background">
+                                    <img class="sidenavImg" src="./assets/images/nav.jpg">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sidenavItem"><a class="waves-effect sidenavLink cyan-text" href="./projects.html">
+                                <i class="material-icons sidenavIco cyan-text">date_range</i>
+                                My Projects</a>
+                        </li>
+                        <li class="sidenavItem"><a class="waves-effect sidenavLink cyan-text" href="./contact.html">
+                                <i class="material-icons sidenavIco cyan-text">mail_outline</i>
+                                Contact Me</a>
+                        </li>
                     </ul>
                 </div>
-            </nav>
+            </header>
+        </div>
 
-            <!--Navbar Phone Menu-->
-            <div>
-                <ul id="slide-out" class="sidenav">
-                    <li>
-                        <div class="user-view">
-                            <div class="background">
-                                <img class="sidenavImg" src="./assets/images/nav.jpg">
-                            </div>
-                        </div>
-                    </li>
-                    <li class="sidenavItem"><a class="waves-effect sidenavLink cyan-text" href="./projects.html">
-                            <i class="material-icons sidenavIco cyan-text">date_range</i>
-                            My Projects</a>
-                    </li>
-                    <li class="sidenavItem"><a class="waves-effect sidenavLink cyan-text" href="./contact.html">
-                            <i class="material-icons sidenavIco cyan-text">mail_outline</i>
-                            Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
 
         <main>
-            <div id="content-container" class="mainContainer">
-                <h2 class="h1 cyan-text infoHeader">About Me</h2>
-                <hr width="80%">
-                <div class="row">
-                    <div class="col s12 l4 offset-l1">
-                        <img class="pic materialboxed" id="profilePic" src="./assets/images/Profile-Pic.jpeg"
-                            alt="Photo">
-                    </div>
-                    <div class="col s12 l7">
-                        <div class="aboutMe">
-                            <p class="aboutMeP">
-                                Full stack developer located in Sacramento California.
-                                UC Davis and Sacramento State Alumni.
-                                Leveraging a background in sociology to construct intuitive user interfaces.
-                            </p>
-                            <p class="aboutMeP">
-                                I excel in JavaScript, Express, Materialize, Handlebars, and React.
-                                If I'm not coding, I'm probably making music or snowboarding.
-                            </p>
+            <div class="mainFade">
+                <div id="content-container" class="mainContainer">
+                    <h2 class="h1 cyan-text infoHeader">About Me</h2>
+                    <hr width="80%">
+                    <div class="row">
+                        <div class="col s12 l4 offset-l1">
+                            <img class="pic materialboxed" id="profilePic" src="./assets/images/Profile-Pic.jpeg"
+                                alt="Photo">
+                        </div>
+                        <div class="col s12 l7">
+                            <div class="aboutMe">
+                                <p class="aboutMeP">
+                                    Full stack developer located in Sacramento California.
+                                    UC Davis and Sacramento State Alumni.
+                                    Leveraging a background in sociology to construct intuitive user interfaces.
+                                </p>
+                                <p class="aboutMeP">
+                                    I excel in JavaScript, Express, Materialize, Handlebars, and React.
+                                    If I'm not coding, I'm probably making music or snowboarding.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col s12">
-                    <iframe frameborder="0" scrolling="no" style="display: block; margin: auto"
-                        src="https://ucdavis.credly.com/embed.html#/?member_badge_id=23072285" width="180" height="230">
-                    </iframe>
-                </div>
-            </div>
-
-            <!--My Links-->
-            <div class="myLinkDiv">
-                <h5 id="findMe">Find me at the links below!</h5>
                 <div class="row">
-                    <div class="col s6">
-                        <a class="myLinks cyan-text" href="https://github.com/connorbreault" target="_blank">Github</a>
+                    <div class="col s12">
+                        <iframe frameborder="0" scrolling="no" style="display: block; margin: auto"
+                            src="https://ucdavis.credly.com/embed.html#/?member_badge_id=23072285" width="180"
+                            height="230">
+                        </iframe>
                     </div>
-                    <div class="col s6">
-                        <a class="myLinks cyan-text" href="https://www.linkedin.com/in/connor-breault/"
-                            target="_blank">LinkedIn</a>
+                </div>
+
+                <!--My Links-->
+                <div class="myLinkDiv">
+                    <h5 id="findMe">Find me at the links below!</h5>
+                    <div class="row">
+                        <div class="col s6">
+                            <a class="myLinks cyan-text" href="https://github.com/connorbreault"
+                                target="_blank">Github</a>
+                        </div>
+                        <div class="col s6">
+                            <a class="myLinks cyan-text" href="https://www.linkedin.com/in/connor-breault/"
+                                target="_blank">LinkedIn</a>
+                        </div>
                     </div>
                 </div>
             </div>
