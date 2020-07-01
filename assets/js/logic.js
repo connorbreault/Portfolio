@@ -1,5 +1,12 @@
 var projects = [
     {
+        name: "Dead Life Records",
+        info: "Label site built for clients Dead Life Records!  Full stack app utilizing AMP, mongoDB, and emailJS.  Storefront developed using shopify. Sole Developer and Designer.",
+        githubRepo: "https://connorbreault.github.io/DeadLifeRecords/",
+        liveSite: "https://boiling-tundra-59490.herokuapp.com/",
+        image: "./assets/images/deadLife.png"
+    },
+    {
         name: "Flub",
         info: "Simplistic site built for clients in the band Flub!  Full stack app utilizing Firebase and emailJS. Sole Developer.",
         githubRepo: "https://github.com/connorbreault/Flub",
