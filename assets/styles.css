@@ -29,6 +29,10 @@ body {
 }
 .text {
   text-align: center;
+  font-family: "Jura", sans-serif;
+}
+.input {
+  font-size: 25px;
 }
 .break {
   margin: 75px auto 45px auto;

@@ -1,6 +1,6 @@
 var projects = [
   {
-    name: "Dead Life Records",
+    name: "Record Label",
     info:
       "Label site built for clients Dead Life Records!  Full stack app utilizing AMP, mongoDB, and emailJS.  Storefront developed using shopify. Sole Developer and Designer.",
     githubRepo: "https://github.com/connorbreault/DeadLifeRecords",
@@ -16,7 +16,7 @@ var projects = [
     image: "./assets/images/Flub.png",
   },
   {
-    name: "Chracacter test",
+    name: "BB quiz",
     info:
       "Which Bobs Burgers character are you?  Take this short quiz to find out!  Full stack app deployed through Heroku. Sole Developer.",
     githubRepo: "https://github.com/connorbreault/Friend-Finder",
@@ -40,7 +40,7 @@ var projects = [
   //   image: "./assets/images/Grafik_Roboto.png",
   // },
   {
-    name: "Candidate Prototype",
+    name: "Frontend test",
     info:
       "Prototype site built for Cindy Lerner, built over a weekend as part of a test for a previous application.",
     githubRepo: "https://github.com/connorbreault/cindylerner",
@@ -62,7 +62,7 @@ var projects = [
     image: "./assets/images/Gif.png",
   },
   {
-    name: "Crystal Collector",
+    name: "Collector",
     info: "Math based memory game!  Currently deployed through Github.",
     githubRepo: "https://github.com/connorbreault/Crystal-Collector",
     liveSite: "https://connorbreault.github.io/Crystal-Collector/",
@@ -104,26 +104,26 @@ function js_Load() {
 // === RENDER PROJECTS === //
 for (let i = 0; i < projects.length; i++) {
   let newCard = ` 
-  <div class="card white-text col s12 l6" style="background: rgba(200, 200, 200, 0.5); border-radius: 15px">
+  <div class="card white-text col s12 l6" style="background: rgba(200, 200, 200, 0.5); border-radius: 15px;">
     <div class="card-image waves-effect waves-block waves-light">
         <img src=${projects[i].image} class="activator cardImg" style="height: 200px">
     </div>
-    <div class="card-content activator">
-      <span class="card-title activator white-text text-darken-4">${projects[i].name}
+    <div class="card-content activator" style="padding: 15px;">
+      <span class="card-title activator white-text">${projects[i].name}
         <i class="material-icons right">more_vert</i>
       </span>
     </div>
     <div class="card-reveal" style="background: rgba(200, 200, 200, 0.9)">
-      <span class="card-title text-darken-2">${projects[i].name}
+      <span class="card-title text-darken-2" style="font-family: 'Jura', sans-serif;">${projects[i].name}
         <i class="material-icons right">close</i>
       </span>
       <div class="cardInfo"> 
         <p>${projects[i].info}</p>
       </div>
     </div>
-    <div class="card-action center-align">
-      <a href=${projects[i].githubRepo} class="cardLinks white-text" target=" _blank" style="margin: 20px">Github</a>
-      <a href=${projects[i].liveSite} class="cardLinks white-text" target=" _blank" style="margin: 20px">Live Site</a>
+    <div class="card-action center-align" style="background: transparent; padding: 10px 0px">
+      <a href=${projects[i].githubRepo} class="cardLinks white-text" target=" _blank" style="margin: 15px">Github</a>
+      <a href=${projects[i].liveSite} class="cardLinks white-text" target=" _blank" style="margin: 15px;">Live Site</a>
     </div>
   </div> 
   `;

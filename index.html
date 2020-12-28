@@ -19,7 +19,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
     <!-- Import Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Playball|Vibes|Cinzel|Merienda&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Compiled and minified CSS -->
@@ -55,7 +56,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="name" type="text" class="white-text">
+                    <input id="name" type="text" class="white-text" style="font-size: 25px;">
                     <label for="name" class="white-text">Name</label>
                 </div>
             </div>
@@ -63,7 +64,7 @@
                 <div class="row" style="margin-bottom: 0px;">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="white-text"></input>
+                        <input id="email" type="email" class="white-text" style="font-size: 25px;"></input>
                         <label for="email" class="white-text">Email</label>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">message</i>
-                            <textarea id="message" class="materialize-textarea validate white-text"></textarea>
+                            <textarea id="message" class="materialize-textarea validate white-text" style="font-size: 25px;"></textarea>
                             <label for="message" class="white-text">Leave a message!</label>
                         </div>
                     </div>
@@ -88,20 +89,19 @@
                 </div>
             </div>
         </div>
-
+        <!-- Message sending progress divs -->
             <div class="loading">
                 <div class="center-align">
                     <lottie-player class="loadingGif hidden" src="https://assets9.lottiefiles.com/packages/lf20_kdy7kfh3.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin: auto;"  loop controls autoplay></lottie-player>
                 </div>
             </div>
 
-            <!-- Thanks message -->
             <div id="thanksMessage" class="hidden">
                 <h1 class="center">Thanks!</h1>
                 <h2 class="center">Your message was sent.</h2>
                 <h3 class="center">I'll get back to you soon!</h3>
             </div>
-            <!-- Error message -->
+            
             <div id="errorMessage" class="hidden">
                 <h1 class="center">Error!</h1>
                 <h2 class="center">Your message did not go through.</h2>
