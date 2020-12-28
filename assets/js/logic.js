@@ -31,14 +31,14 @@ var projects = [
     liveSite: "https://nameless-mesa-44263.herokuapp.com/",
     image: "./assets/images/Burger.png",
   },
-  {
-    name: "Grafik Roboto",
-    info:
-      "Custom storefront for vinyl decal company Grafik Roboto!  Full stack app utilizing MySQL and PayPal. Sole Developer.  STILL IN PROGRESS",
-    githubRepo: "https://github.com/connorbreault/Grafik_roboto",
-    liveSite: "https://enigmatic-eyrie-71266.herokuapp.com/",
-    image: "./assets/images/Grafik_Roboto.png",
-  },
+  // {
+  //   name: "Grafik Roboto",
+  //   info:
+  //     "Custom storefront for vinyl decal company Grafik Roboto!  Full stack app utilizing MySQL and PayPal. Sole Developer.  STILL IN PROGRESS",
+  //   githubRepo: "https://github.com/connorbreault/Grafik_roboto",
+  //   liveSite: "https://enigmatic-eyrie-71266.herokuapp.com/",
+  //   image: "./assets/images/Grafik_Roboto.png",
+  // },
   {
     name: "Candidate Prototype",
     info:
@@ -76,14 +76,14 @@ var projects = [
     liveSite: "https://connorbreault.github.io/Excursion/",
     image: "./assets/images/Excursion.png",
   },
-  {
-    name: "BanderRip",
-    info:
-      "Choose your own path game, group project 2. Lead Developer of a group of 5. I set up the back end and created the entire front end design and logic.  Deployed through Heroku.",
-    githubRepo: "https://github.com/connorbreault/bandersnatch",
-    liveSite: "https://fast-hollows-27557.herokuapp.com/home",
-    image: "./assets/images/Bandersnatch.png",
-  },
+  // {
+  //   name: "BanderRip",
+  //   info:
+  //     "Choose your own path game, group project 2. Lead Developer of a group of 5. I set up the back end and created the entire front end design and logic.  Deployed through Heroku.",
+  //   githubRepo: "https://github.com/connorbreault/bandersnatch",
+  //   liveSite: "https://fast-hollows-27557.herokuapp.com/home",
+  //   image: "./assets/images/Bandersnatch.png",
+  // },
   {
     name: "WeHarmony",
     info:
@@ -132,31 +132,21 @@ for (let i = 0; i < projects.length; i++) {
 
 // === CONTACT ME FORM === //
 $("#submitMessageButton").on("click", function () {
-  var messageName = $("#icon_prefix").val().trim();
-  var messageNumber = $("#icon_telephone").val().trim();
-  var messageEmail = $("#icon_email").val().trim();
-  var messageMessage = $(".messageMessage").val().trim();
-  var prefMethod = $("input[name=group1]:checked").next().text();
-  if (
-    messageName === "" ||
-    messageNumber === "" ||
-    messageEmail === "" ||
-    messageMessage === ""
-  ) {
+  var messageName = $("#name").val().trim();
+  var messageEmail = $("#email").val().trim();
+  var messageMessage = $("#message").val().trim();
+  // var prefMethod = $("input[name=group1]:checked").next().text();
+  if (messageName === "" || messageEmail === "" || messageMessage === "") {
     alert("Please fill out all contact information!");
   } else {
-    $("#icon_prefix").val("");
-    $("#icon_telephone").val("");
-    $("#icon_email").val("");
-    $(".messageMessage").val("");
-    $(".contactDiv").addClass("hidden");
-    $(".myContact").addClass("hidden");
+    $("#name").val("");
+    $("#email").val("");
+    $("#message").val("");
+    $(".contactContainer").addClass("hidden");
     $(".loadingGif").removeClass("hidden");
     let templateParams = {
       name: messageName,
-      number: messageNumber,
       email: messageEmail,
-      method: prefMethod,
       message: messageMessage,
     };
     emailjs.send("default_service", "template_5MmNhXRS", templateParams).then(
