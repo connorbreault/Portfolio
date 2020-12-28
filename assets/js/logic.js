@@ -3,8 +3,8 @@ var projects = [
     name: "Dead Life Records",
     info:
       "Label site built for clients Dead Life Records!  Full stack app utilizing AMP, mongoDB, and emailJS.  Storefront developed using shopify. Sole Developer and Designer.",
-    githubRepo: "https://connorbreault.github.io/DeadLifeRecords/",
-    liveSite: "https://boiling-tundra-59490.herokuapp.com/",
+    githubRepo: "https://github.com/connorbreault/DeadLifeRecords",
+    liveSite: "https://deadliferecords.com/",
     image: "./assets/images/DeadLife.png",
   },
   {
@@ -40,7 +40,7 @@ var projects = [
     image: "./assets/images/Grafik_Roboto.png",
   },
   {
-    name: "Cindy Lerner Prototype",
+    name: "Candidate Prototype",
     info:
       "Prototype site built for Cindy Lerner, built over a weekend as part of a test for a previous application.",
     githubRepo: "https://github.com/connorbreault/cindylerner",
@@ -103,7 +103,30 @@ function js_Load() {
 
 // === RENDER PROJECTS === //
 for (let i = 0; i < projects.length; i++) {
-  let newCard = ` <div class="card"><div class="card-image waves-effect waves-block waves-light"><img src=${projects[i].image} class="activator cardImg"></div><div class="card-content activator"><span class="card-title activator grey-text text-darken-4">${projects[i].name}<i class="material-icons right">more_vert</i></span></div><div class="card-reveal"><span class="card-title cyan-text text-darken-2">${projects[i].name}<i class="material-icons right">close</i></span><div class="cardInfo text-darken-1"><p>${projects[i].info}</p></div></div><div class="card-action gray"><a href=${projects[i].githubRepo} class="cardLinks cyan-text" target=" _blank">Github Repo</a><a href=${projects[i].liveSite} class="cardLinks cyan-text" target=" _blank">Live Site</a></div></div> `;
+  let newCard = ` 
+  <div class="card white-text col s12 l6" style="background: rgba(200, 200, 200, 0.5); border-radius: 15px">
+    <div class="card-image waves-effect waves-block waves-light">
+        <img src=${projects[i].image} class="activator cardImg" style="height: 200px">
+    </div>
+    <div class="card-content activator">
+      <span class="card-title activator white-text text-darken-4">${projects[i].name}
+        <i class="material-icons right">more_vert</i>
+      </span>
+    </div>
+    <div class="card-reveal" style="background: rgba(200, 200, 200, 0.9)">
+      <span class="card-title text-darken-2">${projects[i].name}
+        <i class="material-icons right">close</i>
+      </span>
+      <div class="cardInfo"> 
+        <p>${projects[i].info}</p>
+      </div>
+    </div>
+    <div class="card-action center-align">
+      <a href=${projects[i].githubRepo} class="cardLinks white-text" target=" _blank" style="margin: 20px">Github</a>
+      <a href=${projects[i].liveSite} class="cardLinks white-text" target=" _blank" style="margin: 20px">Live Site</a>
+    </div>
+  </div> 
+  `;
   $(".projectDiv").append(newCard);
 }
 
