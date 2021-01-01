@@ -3,7 +3,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -14,7 +14,7 @@ body {
 
 /* ============= MAIN ============== */
 .cardContainer {
-  background: rgba(30, 30, 30, 0.5);
+  background: rgba(30, 30, 30, 0.4);
   border: 3px solid rgba(255, 255, 255, 0.75);
   border-radius: 50px;
   margin: 75px auto;
