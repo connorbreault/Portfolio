@@ -1,3 +1,4 @@
+const imgRoute = "./assets/images/projects";
 var projects = [
   {
     name: "Record Label",
@@ -5,7 +6,7 @@ var projects = [
       "Label site built for clients Dead Life Records!  Full stack app utilizing AMP, mongoDB, and emailJS.  Storefront developed using shopify. Sole Developer and Designer.",
     githubRepo: "https://github.com/connorbreault/DeadLifeRecords",
     liveSite: "https://deadliferecords.com/",
-    image: "./assets/images/DeadLife.png",
+    image: `${imgRoute}/DeadLife.png`,
   },
   {
     name: "Flub",
@@ -13,7 +14,7 @@ var projects = [
       "Simplistic site built for clients in the band Flub!  Full stack app utilizing Firebase and emailJS. Sole Developer.",
     githubRepo: "https://github.com/connorbreault/Flub",
     liveSite: "https://flubmusic.com/",
-    image: "./assets/images/Flub.png",
+    image: `${imgRoute}/Flub.png`,
   },
   {
     name: "BB quiz",
@@ -21,7 +22,7 @@ var projects = [
       "Which Bobs Burgers character are you?  Take this short quiz to find out!  Full stack app deployed through Heroku. Sole Developer.",
     githubRepo: "https://github.com/connorbreault/Friend-Finder",
     liveSite: "https://friend-finder-breault.herokuapp.com/",
-    image: "./assets/images/Friend-finder.png",
+    image: `${imgRoute}/Friend-finder.png`,
   },
   {
     name: "Burger app",
@@ -29,14 +30,14 @@ var projects = [
       "Full stack app using mySQL and deployed through Heroku. Sole Developer.",
     githubRepo: "https://github.com/connorbreault/burger",
     liveSite: "https://nameless-mesa-44263.herokuapp.com/",
-    image: "./assets/images/Burger.png",
+    image: `${imgRoute}/Burger.png`,
   },
   {
     name: "Trivia",
     info: "Fallout based trivia game!  Currently deployed through Github.",
     githubRepo: "https://github.com/connorbreault/TriviaGame",
     liveSite: "https://connorbreault.github.io/TriviaGame/",
-    image: "./assets/images/Trivia.png",
+    image: `${imgRoute}/Trivia.png`,
   },
 
   {
@@ -44,7 +45,7 @@ var projects = [
     info: "Math based memory game!  Currently deployed through Github.",
     githubRepo: "https://github.com/connorbreault/Crystal-Collector",
     liveSite: "https://connorbreault.github.io/Crystal-Collector/",
-    image: "./assets/images/Crystal.png",
+    image: `${imgRoute}/Crystal.png`,
   },
   {
     name: "Excursion",
@@ -52,7 +53,7 @@ var projects = [
       "Faux Travel budget app,  group project 1.  Co-lead developer of a group of 4. I created the entire visual layout.  Currently deployed through Github.",
     githubRepo: "https://github.com/connorbreault/Excursion",
     liveSite: "https://connorbreault.github.io/Excursion/",
-    image: "./assets/images/Excursion.png",
+    image: `${imgRoute}/Excursion.png`,
   },
   {
     name: "WeHarmony",
@@ -60,32 +61,8 @@ var projects = [
       "Find local musicians, group project 3.  Lead Developer of a group of 2.  I set up the database, all API calls, and created the entire front end.  Deployed through Heroku.",
     githubRepo: "https://github.com/connorbreault/WeHarmonyPrototype",
     liveSite: "https://weharmonyprototype.herokuapp.com/",
-    image: "./assets/images/WeHarmony.png",
+    image: `${imgRoute}/WeHarmony.png`,
   },
-  // {
-  //   name: "BanderRip",
-  //   info:
-  //     "Choose your own path game, group project 2. Lead Developer of a group of 5. I set up the back end and created the entire front end design and logic.  Deployed through Heroku.",
-  //   githubRepo: "https://github.com/connorbreault/bandersnatch",
-  //   liveSite: "https://fast-hollows-27557.herokuapp.com/home",
-  //   image: "./assets/images/Bandersnatch.png",
-  // },
-  // {
-  //   name: "Grafik Roboto",
-  //   info:
-  //     "Custom storefront for vinyl decal company Grafik Roboto!  Full stack app utilizing MySQL and PayPal. Sole Developer.  STILL IN PROGRESS",
-  //   githubRepo: "https://github.com/connorbreault/Grafik_roboto",
-  //   liveSite: "https://enigmatic-eyrie-71266.herokuapp.com/",
-  //   image: "./assets/images/Grafik_Roboto.png",
-  // },
-  // {
-  //   name: "Frontend test",
-  //   info:
-  //     "Prototype site built for Cindy Lerner, built over a weekend as part of a test for a previous application.",
-  //   githubRepo: "https://github.com/connorbreault/cindylerner",
-  //   liveSite: "https://sheltered-springs-40005.herokuapp.com/",
-  //   image: "./assets/images/Cindy.png",
-  // },
 ];
 
 $(document).ready(function () {
