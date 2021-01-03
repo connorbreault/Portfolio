@@ -70,6 +70,8 @@ $(document).ready(function () {
 });
 function js_Load() {
   document.body.style.visibility = "visible";
+  $(".imgContainer").addClass("headerFade");
+  $(".cardContainer").addClass("mainFade");
 }
 
 // === RENDER PROJECTS === //
