@@ -13,17 +13,16 @@
     <meta name="author" content="Connor Breault" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--Link to styles.css-->
+    <!--Link to css-->
     <link rel="stylesheet" href="./assets/styles.css" type="text/css" />
     <link rel="stylesheet" href="./assets/fade.css" type="text/css" />
-    <!-- font awesome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
-    <!-- Import Google Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Import Fonts and Icons-->
     <link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
-    <!--Import Google Icon Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!-- Compiled and minified CSS -->
+    <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -42,12 +41,13 @@
 
   <body>
       <div class="cardContainer white-text">
+
             <div class="imgContainer headerFade">
-              <img
-                class="materialboxed profilePic"
-                src="./assets/images/Profile-Pic.jpeg"
-                alt="Photo"
-              />
+                <img
+                    class="materialboxed profilePic"
+                    src="./assets/images/Profile-Pic.jpeg"
+                    alt="Photo"
+                />
             </div>
 
             <div class="mainFade">
@@ -62,26 +62,23 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="name" type="text" class="white-text" style="font-size: 25px;">
+                            <input id="name" type="text" class="white-text input">
                             <label for="name" class="white-text">Name</label>
                         </div>
                     </div>
 
-                    <!-- !!!! -->
                     <div class="row">
-                        <div class="row" style="margin-bottom: 0px;">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">email</i>
-                                <input id="email" type="email" class="white-text" style="font-size: 25px;"></input>
-                                <label for="email" class="white-text">Email</label>
-                            </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" class="white-text input"></input>
+                            <label for="email" class="white-text">Email</label>
                         </div>
                     </div>
                     
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">message</i>
-                            <textarea id="message" class="materialize-textarea validate white-text" style="font-size: 25px;"></textarea>
+                            <textarea id="message" class="materialize-textarea validate white-text input"></textarea>
                             <label for="message" class="white-text">Leave a message!</label>
                         </div>
                     </div>
@@ -115,34 +112,34 @@
                     <h3 class="center">Please refresh your page and try again</h3>
                 </div>
         
-                <hr class="break">
+                <hr class="lineBreak">
 
                 <h2 class="text">Projects</h2>
                 <div class="row projectDiv"></div>
 
-            <hr class="break">
+                <hr class="lineBreak">
 
-        <div class="followDiv">
-            <h3 class="text">Follow Me</h3>
-            <div class="row">
-                <div class="col s6">
-                    <a class="socialLink" href="https://github.com/connorbreault" target="_blank">
-                        <i class="fab fa-github" style="font-size: 75px"></i>
-                        <br>
-                        Github
-                    </a>
-                </div>
-                <div class="col s6">
-                    <a class="socialLink" href="https://www.linkedin.com/in/connor-breault/" target="_blank">
-                        <i class="fab fa-linkedin" style="font-size: 75px"></i>
-                        <br>
-                        LinkedIn
-                    </a>
+                <div class="center-align">
+                    <h3 class="text">Follow Me</h3>
+                    <div class="row">
+                        <div class="col s6">
+                            <a class="socialLink" href="https://github.com/connorbreault" target="_blank">
+                                <i class="fab fa-github followIcon"></i>
+                                <br>
+                                Github
+                            </a>
+                        </div>
+                        <div class="col s6">
+                            <a class="socialLink" href="https://www.linkedin.com/in/connor-breault/" target="_blank">
+                            <i class="fab fa-linkedin followIcon"></i>
+                            <br>
+                            LinkedIn
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/logic.js"></script>
   </body>

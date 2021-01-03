@@ -31,22 +31,6 @@ var projects = [
     liveSite: "https://nameless-mesa-44263.herokuapp.com/",
     image: "./assets/images/Burger.png",
   },
-  // {
-  //   name: "Grafik Roboto",
-  //   info:
-  //     "Custom storefront for vinyl decal company Grafik Roboto!  Full stack app utilizing MySQL and PayPal. Sole Developer.  STILL IN PROGRESS",
-  //   githubRepo: "https://github.com/connorbreault/Grafik_roboto",
-  //   liveSite: "https://enigmatic-eyrie-71266.herokuapp.com/",
-  //   image: "./assets/images/Grafik_Roboto.png",
-  // },
-  {
-    name: "Frontend test",
-    info:
-      "Prototype site built for Cindy Lerner, built over a weekend as part of a test for a previous application.",
-    githubRepo: "https://github.com/connorbreault/cindylerner",
-    liveSite: "https://sheltered-springs-40005.herokuapp.com/",
-    image: "./assets/images/Cindy.png",
-  },
   {
     name: "Trivia",
     info: "Fallout based trivia game!  Currently deployed through Github.",
@@ -54,13 +38,7 @@ var projects = [
     liveSite: "https://connorbreault.github.io/TriviaGame/",
     image: "./assets/images/Trivia.png",
   },
-  {
-    name: "GifTastic",
-    info: "Gif search site!  Currently deployed through Github.",
-    githubRepo: "https://github.com/connorbreault/GifTastic",
-    liveSite: "https://connorbreault.github.io/GifTastic/",
-    image: "./assets/images/Gif.png",
-  },
+
   {
     name: "Collector",
     info: "Math based memory game!  Currently deployed through Github.",
@@ -76,14 +54,6 @@ var projects = [
     liveSite: "https://connorbreault.github.io/Excursion/",
     image: "./assets/images/Excursion.png",
   },
-  // {
-  //   name: "BanderRip",
-  //   info:
-  //     "Choose your own path game, group project 2. Lead Developer of a group of 5. I set up the back end and created the entire front end design and logic.  Deployed through Heroku.",
-  //   githubRepo: "https://github.com/connorbreault/bandersnatch",
-  //   liveSite: "https://fast-hollows-27557.herokuapp.com/home",
-  //   image: "./assets/images/Bandersnatch.png",
-  // },
   {
     name: "WeHarmony",
     info:
@@ -92,6 +62,30 @@ var projects = [
     liveSite: "https://weharmonyprototype.herokuapp.com/",
     image: "./assets/images/WeHarmony.png",
   },
+  // {
+  //   name: "BanderRip",
+  //   info:
+  //     "Choose your own path game, group project 2. Lead Developer of a group of 5. I set up the back end and created the entire front end design and logic.  Deployed through Heroku.",
+  //   githubRepo: "https://github.com/connorbreault/bandersnatch",
+  //   liveSite: "https://fast-hollows-27557.herokuapp.com/home",
+  //   image: "./assets/images/Bandersnatch.png",
+  // },
+  // {
+  //   name: "Grafik Roboto",
+  //   info:
+  //     "Custom storefront for vinyl decal company Grafik Roboto!  Full stack app utilizing MySQL and PayPal. Sole Developer.  STILL IN PROGRESS",
+  //   githubRepo: "https://github.com/connorbreault/Grafik_roboto",
+  //   liveSite: "https://enigmatic-eyrie-71266.herokuapp.com/",
+  //   image: "./assets/images/Grafik_Roboto.png",
+  // },
+  // {
+  //   name: "Frontend test",
+  //   info:
+  //     "Prototype site built for Cindy Lerner, built over a weekend as part of a test for a previous application.",
+  //   githubRepo: "https://github.com/connorbreault/cindylerner",
+  //   liveSite: "https://sheltered-springs-40005.herokuapp.com/",
+  //   image: "./assets/images/Cindy.png",
+  // },
 ];
 
 $(document).ready(function () {
@@ -135,7 +129,6 @@ $("#submitMessageButton").on("click", function () {
   var messageName = $("#name").val().trim();
   var messageEmail = $("#email").val().trim();
   var messageMessage = $("#message").val().trim();
-  // var prefMethod = $("input[name=group1]:checked").next().text();
   if (messageName === "" || messageEmail === "" || messageMessage === "") {
     alert("Please fill out all contact information!");
   } else {
