@@ -11,7 +11,7 @@ html {
 
 /* ============= MAIN ============== */
 .cardContainer {
-  background: rgba(30, 30, 30, 0.5);
+  background: rgba(30, 30, 30, 0.6);
   border: 3px solid rgba(255, 255, 255, 0.75);
   border-radius: 50px;
   margin: 50px auto;
@@ -19,7 +19,7 @@ html {
   width: 90%;
 }
 .imgContainer {
-  margin: 115px auto;
+  margin: 100px auto;
 }
 .profilePic {
   border: 3px solid rgba(255, 255, 255, 0.75);

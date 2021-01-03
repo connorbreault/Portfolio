@@ -65,13 +65,21 @@ var projects = [
   },
 ];
 
+// === ON LOAD FUNCTIONS === //
 $(document).ready(function () {
   M.AutoInit();
 });
+
 function js_Load() {
   document.body.style.visibility = "visible";
-  $(".imgContainer").addClass("headerFade");
-  $(".cardContainer").addClass("mainFade");
+  $(".imgContainer").addClass("fade");
+  $(".cardContainer").addClass("fade");
+  setTimeout(slideUp, 1000);
+}
+
+function slideUp() {
+  $(".cardContainer").addClass("slideUp");
+  $(".cardContainer").removeClass("hidden");
 }
 
 // === RENDER PROJECTS === //

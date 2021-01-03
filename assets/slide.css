@@ -1,0 +1,53 @@
+/* =========== FADE IN ============= */
+.slideUp {
+  -webkit-animation: slideUp 3s ease; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: slideUp 3s ease; /* Firefox < 16 */
+  -ms-animation: slideUp 3s ease; /* Internet Explorer */
+  -o-animation: slideUp 3s ease; /* Opera < 12.1 */
+  animation: slideUp 3s ease;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes slideUp {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideUp {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes slideUp {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

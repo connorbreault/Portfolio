@@ -1,17 +1,10 @@
 /* =========== FADE IN ============= */
-.headerFade {
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s; /* Firefox < 16 */
-  -ms-animation: fadein 3s; /* Internet Explorer */
-  -o-animation: fadein 3s; /* Opera < 12.1 */
-  animation: fadein 3s;
-}
-.mainFade {
-  -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 6s; /* Firefox < 16 */
-  -ms-animation: fadein 6s; /* Internet Explorer */
-  -o-animation: fadein 6s; /* Opera < 12.1 */
-  animation: fadein 6s;
+.fade {
+  -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1.5s; /* Firefox < 16 */
+  -ms-animation: fadein 1.5s; /* Internet Explorer */
+  -o-animation: fadein 1.5s; /* Opera < 12.1 */
+  animation: fadein 1.5s;
 }
 @keyframes fadein {
   from {

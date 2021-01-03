@@ -16,6 +16,7 @@
     <!--Link to css-->
     <link rel="stylesheet" href="./assets/styles.css" type="text/css" />
     <link rel="stylesheet" href="./assets/fade.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/slide.css" type="text/css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
     <!-- Import Fonts and Icons-->
@@ -49,11 +50,11 @@
         />
     </div>
 
-    <div class="cardContainer white-text">
+    <div class="cardContainer white-text hidden">
 
         <div class="text">
-            <h1 style="margin: 0px">Connor Breault</h1>
-            <h4 style="margin: 10px">Web Developer</h4>
+            <h1>Connor Breault</h1>
+            <h4>Web Developer</h4>
         </div>
         
         <div class="contactContainer">
@@ -77,7 +78,7 @@
                 <div class="input-field col s12">
                     <i class="material-icons prefix">message</i>
                     <textarea id="message" class="materialize-textarea validate white-text input"></textarea>
-                    <label for="message" class="white-text">Leave a message!</label>
+                    <label for="message" class="white-text">Message</label>
                 </div>
             </div>
 
@@ -94,20 +95,23 @@
         <!-- Message sending progress divs -->
         <div class="loadingGif hidden">
             <div class="center-align">
-                <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_xiu4XR.json"  background="rgba(0, 0, 0, 0)"  speed="1"  style="width: 300px; height: 300px; margin: auto"  loop autoplay></lottie-player>
+                <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_xiu4XR.json"  background="rgba(0, 0, 0, 0)"  speed="1"  style="width: 200px; height: 200px; margin: auto"  loop autoplay></lottie-player>
             </div>
         </div>
 
-        <div id="thanksMessage" class="hidden">
-            <h1 class="center">Thanks!</h1>
-            <h2 class="center">Your message was sent.</h2>
-            <h3 class="center">I'll get back to you soon!</h3>
+        <div id="thanksMessage" class="hidden center">
+            <hr class="lineBreak">
+            <i class="fas fa-check followIcon"></i>
+            <h2>Your message was sent.</h2>
+            <h3>I'll get back to you soon!</h3>
         </div>
             
-        <div id="errorMessage" class="hidden">
-            <h1 class="center">Error!</h1>
-            <h2 class="center">Your message did not go through.</h2>
-            <h3 class="center">Please refresh your page and try again</h3>
+        <div id="errorMessage" class="hidden center">
+            <hr class="lineBreak">
+            <i class="fas fa-exclamation-triangle red-text followIcon"></i>
+            <h1 class="red-text">Error!</h1>
+            <h2>Your message did not go through.</h2>
+            <h3>Please and try again</h3>
         </div>
         
         <hr class="lineBreak">
