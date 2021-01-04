@@ -68,16 +68,16 @@ var projects = [
 // === ON LOAD FUNCTIONS === //
 $(document).ready(function () {
   M.AutoInit();
+  $(".body").removeClass("hidden");
+  setTimeout(slideUp, 1000);
 });
 
-function js_Load() {
-  document.body.style.visibility = "visible";
-  $(".imgContainer").addClass("fade");
-  $(".cardContainer").addClass("fade");
-  setTimeout(slideUp, 1000);
-}
+function js_Load() {}
 
 function slideUp() {
+  $(".imgContainer").addClass("fade");
+  $(".imgContainer").removeClass("hidden");
+  $(".cardContainer").addClass("fade");
   $(".cardContainer").addClass("slideUp");
   $(".cardContainer").removeClass("hidden");
 }
