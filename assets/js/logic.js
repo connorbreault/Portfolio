@@ -72,8 +72,8 @@ $(document).ready(function () {
 
 function js_Load() {
   document.body.style.visibility = "visible";
-  $(".imgContainer").addClass("fade");
-  $(".cardContainer").addClass("fade");
+  // $(".imgContainer").addClass("fade");
+  // $(".cardContainer").addClass("fade");
   // setTimeout(slideUp, 1000);
 }
 
