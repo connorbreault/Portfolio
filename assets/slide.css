@@ -9,22 +9,18 @@
 @keyframes slideUp {
   0% {
     transform: translateY(250px);
-    opacity: 0;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 /* Firefox < 16 */
 @-moz-keyframes slideUp {
   0% {
     transform: translateY(250px);
-    opacity: 0;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 
@@ -32,11 +28,9 @@
 @-webkit-keyframes slideUp {
   0% {
     transform: translateY(250px);
-    opacity: 0;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 
@@ -44,10 +38,8 @@
 @-ms-keyframes slideUp {
   0% {
     transform: translateY(250px);
-    opacity: 0;
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
   }
 }
