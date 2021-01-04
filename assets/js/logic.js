@@ -68,11 +68,11 @@ var projects = [
 // === ON LOAD FUNCTIONS === //
 $(document).ready(function () {
   M.AutoInit();
+  setTimeout(slideUp, 1000);
 });
 
 function js_Load() {
   document.body.style.visibility = "visible";
-  setTimeout(slideUp, 1000);
   $(".imgContainer").addClass("fade");
   $(".cardContainer").addClass("fade");
 }
