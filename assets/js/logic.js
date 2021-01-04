@@ -82,34 +82,34 @@ function slideUp() {
   $(".cardContainer").removeClass("hidden");
 }
 
-// === RENDER PROJECTS === //
-for (let i = 0; i < projects.length; i++) {
-  let newCard = ` 
-  <div class="card white-text col s12 l6" style="background: rgba(200, 200, 200, 0.5); border-radius: 15px;">
-    <div class="card-image waves-effect waves-block waves-light">
-        <img src=${projects[i].image} class="activator cardImg" style="height: 200px">
-    </div>
-    <div class="card-content activator" style="padding: 15px;">
-      <span class="card-title activator white-text">${projects[i].name}
-        <i class="material-icons right">more_vert</i>
-      </span>
-    </div>
-    <div class="card-reveal" style="background: rgba(200, 200, 200, 0.9)">
-      <span class="card-title text-darken-2" style="font-family: 'Jura', sans-serif;">${projects[i].name}
-        <i class="material-icons right">close</i>
-      </span>
-      <div class="cardInfo"> 
-        <p>${projects[i].info}</p>
-      </div>
-    </div>
-    <div class="card-action center-align" style="background: transparent; padding: 10px 0px">
-      <a href=${projects[i].githubRepo} class="cardLinks white-text" target=" _blank" style="margin: 15px">Github</a>
-      <a href=${projects[i].liveSite} class="cardLinks white-text" target=" _blank" style="margin: 15px;">Live Site</a>
-    </div>
-  </div> 
-  `;
-  $(".projectDiv").append(newCard);
-}
+// // === RENDER PROJECTS === //
+// for (let i = 0; i < projects.length; i++) {
+//   let newCard = `
+//   <div class="card white-text col s12 l6" style="background: rgba(200, 200, 200, 0.5); border-radius: 15px;">
+//     <div class="card-image waves-effect waves-block waves-light">
+//         <img src=${projects[i].image} class="activator cardImg" style="height: 200px">
+//     </div>
+//     <div class="card-content activator" style="padding: 15px;">
+//       <span class="card-title activator white-text">${projects[i].name}
+//         <i class="material-icons right">more_vert</i>
+//       </span>
+//     </div>
+//     <div class="card-reveal" style="background: rgba(200, 200, 200, 0.9)">
+//       <span class="card-title text-darken-2" style="font-family: 'Jura', sans-serif;">${projects[i].name}
+//         <i class="material-icons right">close</i>
+//       </span>
+//       <div class="cardInfo">
+//         <p>${projects[i].info}</p>
+//       </div>
+//     </div>
+//     <div class="card-action center-align" style="background: transparent; padding: 10px 0px">
+//       <a href=${projects[i].githubRepo} class="cardLinks white-text" target=" _blank" style="margin: 15px">Github</a>
+//       <a href=${projects[i].liveSite} class="cardLinks white-text" target=" _blank" style="margin: 15px;">Live Site</a>
+//     </div>
+//   </div>
+//   `;
+//   $(".projectDiv").append(newCard);
+// }
 
 // === CONTACT ME FORM === //
 $("#submitMessageButton").on("click", function () {
