@@ -72,15 +72,15 @@ $(document).ready(function () {
 });
 
 function js_Load() {
-  $(".imgContainer").addClass("fade");
-  $(".cardContainer").addClass("fade");
+  $(".imgDiv").addClass("fade");
+  $(".cardDiv").addClass("fade");
   document.body.style.visibility = "visible";
   renderProjects();
 }
 
 function slideUp() {
-  $(".cardContainer").addClass("slideUp");
-  $(".cardContainer").removeClass("hidden");
+  $(".cardDiv").addClass("slideUp");
+  $(".cardDiv").removeClass("hidden");
 }
 
 function renderProjects() {
