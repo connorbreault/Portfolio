@@ -1,6 +1,9 @@
-body {
-  background: url("../assets/images/bg.jpg") center center fixed no-repeat;
-  background-size: cover;
+html {
+  background: url("../assets/images/bg.jpg") no-repeat center center fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
 }
 .hidden {
   display: none;
@@ -32,7 +35,7 @@ body {
   font-size: 25px !important;
 }
 .lineBreak {
-  margin: 50px auto;
+  margin: 5px auto 50px auto;
   width: 75%;
 }
 .followIcon {
