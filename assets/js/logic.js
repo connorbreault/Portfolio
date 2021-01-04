@@ -68,11 +68,8 @@ var projects = [
 // === ON LOAD FUNCTIONS === //
 $(document).ready(function () {
   M.AutoInit();
-  $(".body").removeClass("hidden");
   setTimeout(slideUp, 1000);
 });
-
-function js_Load() {}
 
 function slideUp() {
   $(".imgContainer").addClass("fade");
