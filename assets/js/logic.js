@@ -71,6 +71,7 @@ $(document).ready(function () {
   // $(".imgContainer").addClass("fade");
   // $(".cardContainer").addClass("fade");
   // setTimeout(slideUp, 1000);
+  renderProjects();
 });
 
 // function js_Load() {
