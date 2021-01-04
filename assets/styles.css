@@ -1,5 +1,5 @@
 body {
-  background: url("../assets/images/bgMobile.jpg") no-repeat center center fixed !important;
+  background: url("../assets/images/bg.jpg") no-repeat center center fixed !important;
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   -o-background-size: cover !important;
@@ -51,13 +51,6 @@ body {
 
 /* =========== OVER 800px ========== */
 @media only screen and (min-width: 825px) {
-  body {
-    background: url("../assets/images/bg.jpg") no-repeat center center fixed !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    background-size: cover !important;
-  }
   .cardContainer {
     width: 50%;
   }
