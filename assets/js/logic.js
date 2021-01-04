@@ -68,9 +68,9 @@ var projects = [
 // === ON LOAD FUNCTIONS === //
 $(document).ready(function () {
   M.AutoInit();
-  $(".imgContainer").addClass("fade");
-  $(".cardContainer").addClass("fade");
-  setTimeout(slideUp, 1000);
+  // $(".imgContainer").addClass("fade");
+  // $(".cardContainer").addClass("fade");
+  // setTimeout(slideUp, 1000);
 });
 
 function js_Load() {
