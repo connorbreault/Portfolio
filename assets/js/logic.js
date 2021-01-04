@@ -73,15 +73,14 @@ $(document).ready(function () {
   // setTimeout(slideUp, 1000);
 });
 
-function js_Load() {
-  document.body.style.visibility = "visible";
-}
+// function js_Load() {
+//   document.body.style.visibility = "visible";
+// }
 
-function slideUp() {
-  $(".cardContainer").addClass("slideUp");
-  $(".cardContainer").removeClass("hidden");
-  // renderProjects();
-}
+// function slideUp() {
+//   $(".cardContainer").addClass("slideUp");
+//   $(".cardContainer").removeClass("hidden");
+// }
 
 function renderProjects() {
   // === RENDER PROJECTS === //
