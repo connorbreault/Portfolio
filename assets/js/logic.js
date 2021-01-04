@@ -68,20 +68,20 @@ var projects = [
 // === ON LOAD FUNCTIONS === //
 $(document).ready(function () {
   M.AutoInit();
-  // $(".imgContainer").addClass("fade");
-  // $(".cardContainer").addClass("fade");
-  // setTimeout(slideUp, 1000);
-  renderProjects();
+  setTimeout(slideUp, 1000);
 });
 
-// function js_Load() {
-//   document.body.style.visibility = "visible";
-// }
+function js_Load() {
+  $(".imgContainer").addClass("fade");
+  $(".cardContainer").addClass("fade");
+  document.body.style.visibility = "visible";
+  renderProjects();
+}
 
-// function slideUp() {
-//   $(".cardContainer").addClass("slideUp");
-//   $(".cardContainer").removeClass("hidden");
-// }
+function slideUp() {
+  $(".cardContainer").addClass("slideUp");
+  $(".cardContainer").removeClass("hidden");
+}
 
 function renderProjects() {
   // === RENDER PROJECTS === //
