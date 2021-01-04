@@ -24,14 +24,14 @@ html {
   width: 75%;
 }
 
-/* .cardContainer {
-  /* background: rgba(30, 30, 30); */
-  /* border: 3px solid rgba(255, 255, 255, 0.75); */
-  /* border-radius: 50px; */
-  /* margin: 50px auto; */
-  /* padding: 25px; */
-  /* width: 90%; */
-} */
+.cardContainer {
+  background: rgba(30, 30, 30, 0.6);
+  border: 3px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50px;
+  margin: 50px auto;
+  padding: 25px;
+  width: 90%;
+}
 .input {
   font-size: 25px !important;
 }
