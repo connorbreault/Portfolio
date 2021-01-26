@@ -72,13 +72,13 @@ $(document).ready(function () {
 });
 
 function js_Load() {
-  document.body.style.visibility = "visible";
   $(".imgDiv").addClass("fade");
-  $(".cardDiv").addClass("fade");
+  document.body.style.visibility = "visible";
   renderProjects();
 }
 
 function slideUp() {
+  $(".cardDiv").addClass("fade");
   $(".cardDiv").addClass("slideUp");
   $(".cardDiv").removeClass("hidden");
 }
