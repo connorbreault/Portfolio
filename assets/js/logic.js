@@ -72,9 +72,9 @@ $(document).ready(function () {
 });
 
 function js_Load() {
+  document.body.style.visibility = "visible";
   $(".imgDiv").addClass("fade");
   $(".cardDiv").addClass("fade");
-  document.body.style.visibility = "visible";
   renderProjects();
 }
 
@@ -125,7 +125,7 @@ $("#submitMessageButton").on("click", function () {
     $("#name").val("");
     $("#email").val("");
     $("#message").val("");
-    $(".contactContainer").addClass("hidden");
+    $(".contactDiv").addClass("hidden");
     $(".loadingGif").removeClass("hidden");
     let templateParams = {
       name: messageName,
