@@ -119,6 +119,7 @@ $("#submitMessageButton").on("click", function () {
   var messageName = $("#name").val().trim();
   var messageEmail = $("#email").val().trim();
   var messageMessage = $("#message").val().trim();
+
   if (messageName === "" || messageEmail === "" || messageMessage === "") {
     alert("Please fill out all contact information!");
   } else {
