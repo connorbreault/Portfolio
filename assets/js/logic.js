@@ -97,11 +97,11 @@ function renderProjects() {
       </span>
     </div>
     <div class="card-reveal" style="background: rgba(200, 200, 200, 0.9)">
-      <span class="card-title text-darken-2" style="font-family: 'Jura', sans-serif;">${projects[i].name}
-        <i class="material-icons right">close</i>
+      <span class="card-title black-text" style="font-family: 'Jura', sans-serif;">${projects[i].name}
+        <i class="material-icons right black-text">close</i>
       </span>
       <div class="cardInfo">
-        <p>${projects[i].info}</p>
+        <p class="black-text">${projects[i].info}</p>
       </div>
     </div>
     <div class="card-action center-align" style="background: transparent; padding: 10px 0px">
