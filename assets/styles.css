@@ -18,14 +18,14 @@ html {
   margin: 100px auto;
 }
 .profilePic {
-  border: 3px solid rgba(255, 255, 255, 0.75);
+  border: 2px solid rgba(135, 170, 175, 0.75);
   border-radius: 50%;
   margin: auto;
-  width: 75%;
+  width: 65%;
 }
 .cardDiv {
   background: rgba(30, 30, 30, 0.6);
-  border: 3px solid rgba(255, 255, 255, 0.75);
+  border: 2px solid rgba(185, 115, 45, 0.75);
   border-radius: 50px;
   margin: 50px auto;
   padding: 25px;
@@ -34,6 +34,7 @@ html {
 .lineBreak {
   margin: 50px auto 50px auto;
   width: 75%;
+  color: rgba(185, 115, 45, 0.75);
 }
 .followIcon {
   font-size: 75px;
@@ -42,7 +43,7 @@ html {
   color: white;
 }
 .socialLink:hover {
-  color: goldenrod;
+  color: goldenrod !important;
 }
 
 /* =========== OVER 800px ========== */
@@ -51,6 +52,6 @@ html {
     width: 50%;
   }
   .profilePic {
-    width: 25%;
+    width: 20%;
   }
 }
