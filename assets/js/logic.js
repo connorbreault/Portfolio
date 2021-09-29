@@ -68,7 +68,7 @@ $(document).ready(function () {
 function js_Load() {
   $(".imgDiv").addClass("fade");
   document.body.style.visibility = "visible";
-  // renderProjects();
+  renderProjects();
 }
 
 function slideUp() {
