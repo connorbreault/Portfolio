@@ -1,31 +1,24 @@
 # Portfolio
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 ![Demoimg](./assets/images/demo.png)
 
-My current portfolio, live at [connorbreault.dev](https://connorbreault.dev/). This simplified web app was built utilizing the following technologies:
-
-  - Materialize
-  - Javascript
+My current portfolio, live at [connorbreault.dev](https://connorbreault.dev/).
 
 # With this site, you can...
 
-  - View my information
-  - Send me messages
-  - View some of my past projects
+- View my information
+- Send me messages
+- View some of my past projects
 
-### All Tech & languages
+### Tech & languages
 
 This application was written using all of the following:
 
-* [HTML]
-* [CSS]
-* [Materialize]
-* [jQuery]
-* [Javascript]
-
+- [HTML + CSS]
+- [Materialize]
+- [jQuery]
+- [LottieFiles]
 
 ### Installation
 
-No installation or login required!
+No installation or login required

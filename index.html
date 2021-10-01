@@ -57,6 +57,7 @@
   </head>
 
   <body style="visibility: hidden" onload="js_Load()">
+    <!-- === MY PICTURE DIV === -->
     <div class="imgDiv">
       <img
         class="materialboxed profilePic"
@@ -66,11 +67,13 @@
     </div>
 
     <div class="contentDiv hidden">
+      <!-- === MY INFO DIV === -->
       <div class="text">
         <h1 class="amber-text text-lighten-3">Connor Breault</h1>
-        <h4 class="cyan-text text-lighten-4">Web Developer UPDATE2</h4>
+        <h4 class="cyan-text text-lighten-4">Web Developer</h4>
       </div>
 
+      <!-- === CONTACT INPUT DIV === -->
       <div class="contactDiv cyan-text text-lighten-4">
         <div class="row">
           <div class="input-field col s12">
@@ -113,27 +116,30 @@
           </div>
         </div>
       </div>
+
+      <!-- === SEND RESPONSE DIVS === -->
+
       <div class="loadingGif hidden">
         <div class="center-align">
           <lottie-player
-            src="https://assets5.lottiefiles.com/private_files/lf30_xiu4XR.json"
+            src="https://assets7.lottiefiles.com/packages/lf20_kddgvepp.json"
             background="rgba(0, 0, 0, 0)"
             speed="1"
-            style="width: 200px; height: 200px; margin: auto"
+            style="width: 250px; height: 250px; margin: auto"
             loop
             autoplay
           ></lottie-player>
         </div>
       </div>
 
-      <div id="thanksMessage" class="center">
+      <div id="thanksMessage" class="hidden center">
         <hr class="lineBreak" />
         <i class="fas fa-check followIcon amber-text text-lighten-3"></i>
         <h2 class="amber-text text-lighten-3">Your message was sent.</h2>
         <h3 class="cyan-text text-lighten-4">I'll get back to you soon!</h3>
       </div>
 
-      <div id="errorMessage" class="center">
+      <div id="errorMessage" class="hidden center">
         <hr class="lineBreak" />
         <i class="fas fa-exclamation-triangle red-text followIcon"></i>
         <h1 class="red-text text-darken-2">Error!</h1>
@@ -143,11 +149,14 @@
 
       <hr class="lineBreak" />
 
+      <!-- === PROJECTS DIV (projects rendered in via logic.js) === -->
+
       <h2 class="text amber-text text-lighten-3">Projects</h2>
       <div class="row projectDiv"></div>
 
       <hr class="lineBreak" />
 
+      <!-- === SOCIAL MEDIA DIV === -->
       <div class="center-align amber-text text-lighten-3">
         <h3 class="text">Follow Me</h3>
         <div class="row">

@@ -110,34 +110,41 @@ function renderProjects() {
 
 // === CONTACT ME FORM === //
 $("#submitMessageButton").on("click", function () {
+  // === GATHER INPUT VALUES === //
   var messageName = $("#name").val().trim();
   var messageEmail = $("#email").val().trim();
   var messageMessage = $("#message").val().trim();
+  let templateParams = {
+    name: messageName,
+    email: messageEmail,
+    message: messageMessage,
+  };
 
   if (messageName === "" || messageEmail === "" || messageMessage === "") {
+    // === IF INPUTS ARE INVALID === //
     alert("Please fill out all contact information!");
   } else {
-    $("#name").val("");
-    $("#email").val("");
-    $("#message").val("");
+    // === IF INPUTS ARE VALID === //
     $(".contactDiv").addClass("hidden");
     $(".loadingGif").removeClass("hidden");
-    let templateParams = {
-      name: messageName,
-      email: messageEmail,
-      message: messageMessage,
-    };
     emailjs.send("default_service", "template_5MmNhXRS", templateParams).then(
+      // === IF SEND SUCCESS === //
       function (response) {
         console.log("Sucessful message send!");
         $(".loadingGif").addClass("hidden");
         $("#thanksMessage").removeClass("hidden");
       },
+
+      // === IF SEND ERROR === //
       function (error) {
         console.log("FAILED...", error);
         $(".loadingGif").addClass("hidden");
         $("#errorMessage").removeClass("hidden");
       }
     );
+    // === CLEAR INPUTS WHEN DONE === //
+    $("#name").val("");
+    $("#email").val("");
+    $("#message").val("");
   }
 });
