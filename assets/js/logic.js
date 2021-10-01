@@ -62,13 +62,13 @@ var projects = [
 // === ON LOAD FUNCTIONS === //
 $(document).ready(function () {
   M.AutoInit();
-  setTimeout(slideUp, 1000);
+  // setTimeout(slideUp, 1000);
 });
 
 function js_Load() {
-  $(".imgDiv").addClass("fade");
+  // $(".imgDiv").addClass("fade");
   document.body.style.visibility = "visible";
-  // renderProjects();
+  renderProjects();
 }
 
 function slideUp() {
