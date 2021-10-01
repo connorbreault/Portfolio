@@ -2,14 +2,14 @@ const imgRoute = "./assets/images/projects";
 var projects = [
   {
     name: "Record Label",
-    info: "Label site built for clients Dead Life Records!  Full stack app utilizing AMP, mongoDB, and emailJS.  Storefront developed using shopify. Sole Developer and Designer.",
+    info: "Record label site built for clients Dead Life Records.  Full stack app utilizing AMP, mongoDB, and emailJS.  Storefront developed using shopify. Sole Developer and Designer.",
     githubRepo: "https://github.com/connorbreault/DeadLifeRecords",
     liveSite: "https://deadliferecords.com/",
     image: `${imgRoute}/DeadLife.png`,
   },
   {
     name: "Flub",
-    info: "Simplistic site built for clients in the band Flub!  Full stack app utilizing Firebase and emailJS. Sole Developer.",
+    info: "Simple site built for clients in the band 'Flub'.  App utilizing Firebase and emailJS. Sole Developer.",
     githubRepo: "https://github.com/connorbreault/Flub",
     liveSite: "https://flubmusic.com/",
     image: `${imgRoute}/Flub.png`,
@@ -30,7 +30,7 @@ var projects = [
   },
   {
     name: "Trivia",
-    info: "Fallout based trivia game!  Currently deployed through Github.",
+    info: "Fallout based trivia game, currently deployed through Github.",
     githubRepo: "https://github.com/connorbreault/TriviaGame",
     liveSite: "https://connorbreault.github.io/TriviaGame/",
     image: `${imgRoute}/Trivia.png`,
@@ -38,21 +38,21 @@ var projects = [
 
   {
     name: "Collector",
-    info: "Math based memory game!  Currently deployed through Github.",
+    info: "Math based memory game, currently deployed through Github.",
     githubRepo: "https://github.com/connorbreault/Crystal-Collector",
     liveSite: "https://connorbreault.github.io/Crystal-Collector/",
     image: `${imgRoute}/Crystal.png`,
   },
   {
     name: "Excursion",
-    info: "Faux Travel budget app,  group project 1.  Co-lead developer of a group of 4. I created the entire visual layout.  Currently deployed through Github.",
+    info: "Travel budget app prototype, group project 1 from the UC Davis Bootcamp.  Front-End developer. Currently deployed through Github.",
     githubRepo: "https://github.com/connorbreault/Excursion",
     liveSite: "https://connorbreault.github.io/Excursion/",
     image: `${imgRoute}/Excursion.png`,
   },
   {
     name: "WeHarmony",
-    info: "Find local musicians, group project 3.  Lead Developer of a group of 2.  I set up the database, all API calls, and created the entire front end.  Deployed through Heroku.",
+    info: "Musician geolocation app prototype, group project 3 from the UC Davis Bootcamp.  Lead Developer. Deployed through Heroku.",
     githubRepo: "https://github.com/connorbreault/WeHarmonyPrototype",
     liveSite: "https://weharmonyprototype.herokuapp.com/",
     image: `${imgRoute}/WeHarmony.png`,
@@ -62,19 +62,19 @@ var projects = [
 // === ON LOAD FUNCTIONS === //
 $(document).ready(function () {
   M.AutoInit();
-  // setTimeout(slideUp, 1000);
+  setTimeout(slideUp, 1000);
 });
 
 function js_Load() {
   $(".imgDiv").addClass("fade");
-  // document.body.style.visibility = "visible";
+  document.body.style.visibility = "visible";
   renderProjects();
 }
 
 function slideUp() {
-  $(".cardDiv").addClass("fade");
-  $(".cardDiv").addClass("slideUp");
-  $(".cardDiv").removeClass("hidden");
+  $(".contentDiv").addClass("fade");
+  $(".contentDiv").addClass("slideUp");
+  $(".contentDiv").removeClass("hidden");
 }
 
 function renderProjects() {

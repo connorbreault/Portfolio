@@ -56,7 +56,7 @@
     <title>Connor Breault - Web Developer</title>
   </head>
 
-  <body onload="js_Load()">
+  <body style="visibility: hidden" onload="js_Load()">
     <div class="imgDiv">
       <img
         class="materialboxed profilePic"
@@ -65,7 +65,7 @@
       />
     </div>
 
-    <div class="cardDiv">
+    <div class="contentDiv hidden">
       <div class="text">
         <h1 class="amber-text text-lighten-3">Connor Breault</h1>
         <h4 class="cyan-text text-lighten-4">Web Developer UPDATE2</h4>
@@ -126,19 +126,19 @@
         </div>
       </div>
 
-      <div id="thanksMessage" class="hidden center">
+      <div id="thanksMessage" class="center">
         <hr class="lineBreak" />
-        <i class="fas fa-check followIcon"></i>
-        <h2>Your message was sent.</h2>
-        <h3>I'll get back to you soon!</h3>
+        <i class="fas fa-check followIcon amber-text text-lighten-3"></i>
+        <h2 class="amber-text text-lighten-3">Your message was sent.</h2>
+        <h3 class="cyan-text text-lighten-4">I'll get back to you soon!</h3>
       </div>
 
-      <div id="errorMessage" class="hidden center">
+      <div id="errorMessage" class="center">
         <hr class="lineBreak" />
         <i class="fas fa-exclamation-triangle red-text followIcon"></i>
-        <h1 class="red-text">Error!</h1>
-        <h2>Your message did not go through.</h2>
-        <h3>Please and try again</h3>
+        <h1 class="red-text text-darken-2">Error!</h1>
+        <h2 class="red-text text-darken-2">Your message did not go through.</h2>
+        <h3 class="amber-text text-lighten-3">Please try again</h3>
       </div>
 
       <hr class="lineBreak" />

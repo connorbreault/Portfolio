@@ -1,11 +1,4 @@
-/* html,
-body {
-  background: url("../assets/images/bg.jpg") no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
+/* === BACKGROUND === */
 body:before {
   content: "";
   display: block;
@@ -21,6 +14,7 @@ body:before {
   -o-background-size: cover;
   background-size: cover;
 }
+/* === GENERAL === */
 .text {
   text-align: center;
   font-family: "Jura", sans-serif;
@@ -29,7 +23,7 @@ body:before {
   display: none;
 }
 
-/* ============= MAIN ============== */
+/* === MAIN === */
 .imgDiv {
   margin: 100px auto;
 }
@@ -39,7 +33,7 @@ body:before {
   margin: auto;
   width: 65%;
 }
-.cardDiv {
+.contentDiv {
   background: rgba(30, 30, 30, 0.6);
   border: 2px solid rgba(185, 115, 45, 0.75);
   border-radius: 50px;
@@ -62,9 +56,9 @@ body:before {
   color: goldenrod !important;
 }
 
-/* =========== OVER 800px ========== */
+/* === OVER 800px === */
 @media only screen and (min-width: 825px) {
-  .cardDiv {
+  .contentDiv {
     width: 50%;
   }
   .profilePic {
