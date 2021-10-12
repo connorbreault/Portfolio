@@ -21,6 +21,13 @@ var projects = [
     image: `${imgRoute}/Flub.png`,
   },
   {
+    name: "TechSite",
+    info: "Simple prototype website for a tech website. Utilizes Materialize, jQuery, and customized LottieFiles",
+    githubRepo: "https://github.com/connorbreault/TechSitePrototype",
+    liveSite: "https://connorbreault.github.io/TechSitePrototype/",
+    image: `${imgRoute}/TechSite.png`,
+  },
+  {
     name: "BB quiz",
     info: "Which Bobs Burgers character are you?  Take this short quiz to find out!  Full stack app deployed through Heroku. Sole Developer.",
     githubRepo: "https://github.com/connorbreault/Friend-Finder",
@@ -34,13 +41,13 @@ var projects = [
     liveSite: "https://nameless-mesa-44263.herokuapp.com/",
     image: `${imgRoute}/Burger.png`,
   },
-  // {
-  //   name: "Trivia",
-  //   info: "Fallout based trivia game, currently deployed through Github.",
-  //   githubRepo: "https://github.com/connorbreault/TriviaGame",
-  //   liveSite: "https://connorbreault.github.io/TriviaGame/",
-  //   image: `${imgRoute}/Trivia.png`,
-  // },
+  {
+    name: "Trivia",
+    info: "Fallout based trivia game, currently deployed through Github.",
+    githubRepo: "https://github.com/connorbreault/TriviaGame",
+    liveSite: "https://connorbreault.github.io/TriviaGame/",
+    image: `${imgRoute}/Trivia.png`,
+  },
   {
     name: "Collector",
     info: "Math based memory game, currently deployed through Github.",
