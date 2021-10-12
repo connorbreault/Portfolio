@@ -8,6 +8,12 @@ var projects = [
     image: `${imgRoute}/DeadLife.png`,
   },
   {
+    name: "WA Clone",
+    info: "Look-a-like prototype app of WhatsApp.  Full stack messenger app utilizing React Native, Expo, and AWS.",
+    githubRepo: "https://github.com/connorbreault/DeadLifeRecords",
+    image: `${imgRoute}/WhatsApp.png`,
+  },
+  {
     name: "Flub",
     info: "Simple site built for clients in the band 'Flub'.  App utilizing Firebase and emailJS. Sole Developer.",
     githubRepo: "https://github.com/connorbreault/Flub",
@@ -28,14 +34,13 @@ var projects = [
     liveSite: "https://nameless-mesa-44263.herokuapp.com/",
     image: `${imgRoute}/Burger.png`,
   },
-  {
-    name: "Trivia",
-    info: "Fallout based trivia game, currently deployed through Github.",
-    githubRepo: "https://github.com/connorbreault/TriviaGame",
-    liveSite: "https://connorbreault.github.io/TriviaGame/",
-    image: `${imgRoute}/Trivia.png`,
-  },
-
+  // {
+  //   name: "Trivia",
+  //   info: "Fallout based trivia game, currently deployed through Github.",
+  //   githubRepo: "https://github.com/connorbreault/TriviaGame",
+  //   liveSite: "https://connorbreault.github.io/TriviaGame/",
+  //   image: `${imgRoute}/Trivia.png`,
+  // },
   {
     name: "Collector",
     info: "Math based memory game, currently deployed through Github.",
@@ -80,7 +85,8 @@ function slideUp() {
 function renderProjects() {
   // === RENDER PROJECTS === //
   for (let i = 0; i < projects.length; i++) {
-    let newCard = `
+    if (projects[i].liveSite) {
+      let newCard = `
   <div class="card white-text col s12 l6" style="background: rgba(200, 200, 200, 0.5); border-radius: 15px;">
     <div class="card-image waves-effect waves-block waves-light">
         <img src=${projects[i].image} class="activator cardImg" style="height: 200px">
@@ -104,7 +110,33 @@ function renderProjects() {
     </div>
   </div>
   `;
-    $(".projectDiv").append(newCard);
+      $(".projectDiv").append(newCard);
+    } else {
+      let newCard = `
+      <div class="card white-text col s12 l6" style="background: rgba(200, 200, 200, 0.5); border-radius: 15px;">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img src=${projects[i].image} class="activator cardImg" style="height: 200px">
+        </div>
+        <div class="card-content activator" style="padding: 15px;">
+          <span class="card-title activator amber-text text-lighten-3">${projects[i].name}
+            <i class="material-icons right">more_vert</i>
+          </span>
+        </div>
+        <div class="card-reveal" style="background: rgba(200, 200, 200, 0.9)">
+          <span class="card-title black-text" style="font-family: 'Jura', sans-serif;">${projects[i].name}
+            <i class="material-icons right black-text">close</i>
+          </span>
+          <div class="cardInfo">
+            <p class="black-text">${projects[i].info}</p>
+          </div>
+        </div>
+        <div class="card-action center-align" style="background: transparent; padding: 10px 0px">
+          <a href=${projects[i].githubRepo} class="cardLinks white-text" target=" _blank" style="margin: 15px">Github</a>
+        </div>
+      </div>
+      `;
+      $(".projectDiv").append(newCard);
+    }
   }
 }
 
