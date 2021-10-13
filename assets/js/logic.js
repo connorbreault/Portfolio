@@ -28,6 +28,18 @@ var projects = [
     image: `${imgRoute}/TechSite.png`,
   },
   {
+    name: "WeHarmonyApp",
+    info: "Front end prototype app for musicians. Utilizes React Native, Expo, and customized LottieFiles",
+    githubRepo: "https://github.com/connorbreault/WeHarmony",
+    image: `${imgRoute}/WeHarmonyApp.png`,
+  },
+  {
+    name: "DoneWithIt",
+    info: "Simple front end prototype app I built following the Coding With Mosh course. Utilizes React Native, Expo, and customized LottieFiles",
+    githubRepo: "https://github.com/connorbreault/DoneWithIt",
+    image: `${imgRoute}/DoneWithIt.png`,
+  },
+  {
     name: "BB quiz",
     info: "Which Bobs Burgers character are you?  Take this short quiz to find out!  Full stack app deployed through Heroku. Sole Developer.",
     githubRepo: "https://github.com/connorbreault/Friend-Finder",
